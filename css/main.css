@@ -216,14 +216,6 @@ align-items:center;
 justify-content:center;
 }
 
-.modal-content{
-background:#fff;
-padding:40px;
-border-radius:12px;
-max-width:600px;
-position:relative;
-}
-
 .close{
 position:absolute;
 top:10px;
@@ -265,3 +257,39 @@ max-width:520px;
 align-self:flex-start;
 }
 
+.modal-meta{
+align-self:flex-start;
+margin-bottom:10px;
+}
+
+#modalClass{
+font-size:14px;
+opacity:.6;
+margin-top:-5px;
+}
+
+.modal-softwares{
+display:flex;
+gap:12px;
+margin-top:20px;
+align-self:flex-end;
+}
+
+.modal-softwares img{
+height:28px;
+opacity:.8;
+}
+
+#modalMedia img,
+#modalMedia iframe{
+width:65%;
+max-width:450px;
+border-radius:10px;
+margin-bottom:25px;
+}
+
+.card video{
+width:100%;
+border-radius:8px;
+display:block;
+}

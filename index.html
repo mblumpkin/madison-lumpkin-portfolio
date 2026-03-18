@@ -104,28 +104,34 @@
 <div class="card"
 onclick="openModal(
 'Beyond the Light Game Concept Art',
-'add a description',
-'./img/illustrations/LightBeanConceptArt.png'
+'add description',
+'./img/illustrations/LightBeanConceptArt.png',
+'add class/personal',
+['./img/logos/Procreate-Logo.png','./img/logos/Adobe_Photoshop_CC_icon.svg.png']
 )">
-<img src="./img/illustrations/LightBeanConceptArt.png" alt="">
+<img src="./img/illustrations/LightBeanConceptArt.png">
 </div>
 
 <div class="card"
 onclick="openModal(
 'Kingfisher Dock',
-'add a description',
-'./img/illustrations/Kingfisher.PNG'
+'add description',
+'./img/illustrations/Kingfisher.PNG',
+'add class/personal',
+['./img/logos/Procreate-Logo.png','./img/logos/Adobe_Photoshop_CC_icon.svg.png']
 )">
-<img src="./img/illustrations/Kingfisher.PNG" alt="">
+<img src="./img/illustrations/Kingfisher.PNG">
 </div>
 
 <div class="card"
 onclick="openModal(
-'Mourice Character Design Concept',
-'add a description',
-'./img/illustrations/mourice.png'
+'Mourice Character Concept Art',
+'add description',
+'./img/illustrations/mourice.png',
+'Game Design Studio I',
+['./img/logos/Procreate-Logo.png']
 )">
-<img src="./img/illustrations/mourice.png" alt="">
+<img src="./img/illustrations/mourice.png">
 </div>
 
 </div>
@@ -171,22 +177,42 @@ onclick="openModal(
 
 <section id="games" class="section">
 <h2>Game Development</h2>
+
 <div class="grid">
-<div class="card" onclick="openModal('Unity level design')"></div>
+
+<div class="card"
+onclick="openVideoModal(
+'Plate Balance Prototype',
+'Physics-based food balancing mechanic.',
+'Game Design II',
+['./img/logos/unreal.webp'],
+'https: //www.youtube.com/embed/AKsFfHYbukY'
+)">
+</div>
+
 </div>
 </section>
 
 <section id="design" class="section alt">
 <h2>Graphic Design</h2>
 <div class="grid">
-<div class="card" onclick="openModal('Brand identity project')"></div>
 
 <div class="card"
 onclick="openModal(
-'description placeholder CHANGE THIS',
-'./images/graphicdesign1.jpg'
+'Color Systems Storybook Designs',
+'add a description',
+'./img/graphic design/colorsystemsall.png'
 )">
-<img src="./img/graphic design/Madison_Lumpkin_P5_ColorSystems_Pelican.png" alt="">
+<img src="./img/graphic design/colorsystemsall.png" alt="">
+</div>
+
+<div class="card"
+onclick="openModal(
+'Color Schemes Drink Moods',
+'add a description',
+'./img/graphic design/ColorSchemesAll.png'
+)">
+<img src="./img/graphic design/ColorSchemesAll.png" alt="">
 </div>
 
 </div>
@@ -203,11 +229,19 @@ onclick="openModal(
 
 <div id="modal" class="modal" onclick="closeModal()">
   <div class="modal-content" onclick="event.stopPropagation()">
+
     <span class="close" onclick="closeModal()">×</span>
 
-    <img id="modalImg" src="" alt="">
-    <h3 id="modalTitle"></h3>
+    <div id="modalMedia"></div>
+
+    <div class="modal-meta">
+        <h3 id="modalTitle"></h3>
+        <p id="modalClass"></p>
+    </div>
+
     <p id="modalText"></p>
+
+    <div id="modalSoftwares" class="modal-softwares"></div>
 
   </div>
 </div>

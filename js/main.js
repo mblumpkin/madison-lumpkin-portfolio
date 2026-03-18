@@ -13,12 +13,47 @@ function resizeAll(){
 window.addEventListener('load', resizeAll);
 window.addEventListener('resize', resizeAll);
 
-function openModal(title, description, image){
+function openModal(title, description, image, className = "", softwares = []){
+
     document.getElementById("modal").style.display = "flex";
+
+    document.getElementById("modalMedia").innerHTML =
+        `<img src="${image}">`;
 
     document.getElementById("modalTitle").innerText = title;
     document.getElementById("modalText").innerText = description;
-    document.getElementById("modalImg").src = image;
+    document.getElementById("modalClass").innerText = className;
+
+    const softContainer = document.getElementById("modalSoftwares");
+    softContainer.innerHTML = "";
+
+    softwares.forEach(soft => {
+        const img = document.createElement("img");
+        img.src = soft;
+        softContainer.appendChild(img);
+    });
+}
+
+function openVideoModal(title, description, className, softwares, videoUrl){
+
+    document.getElementById("modal").style.display = "flex";
+
+    document.getElementById("modalMedia").innerHTML =
+        `<iframe src="${videoUrl}" frameborder="0"
+        allowfullscreen></iframe>`;
+
+    document.getElementById("modalTitle").innerText = title;
+    document.getElementById("modalText").innerText = description;
+    document.getElementById("modalClass").innerText = className;
+
+    const softContainer = document.getElementById("modalSoftwares");
+    softContainer.innerHTML = "";
+
+    softwares.forEach(soft => {
+        const img = document.createElement("img");
+        img.src = soft;
+        softContainer.appendChild(img);
+    });
 }
 
 function closeModal(){
