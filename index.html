@@ -1,25 +1,132 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Your Name | Portfolio</title>
-  <meta name="description" content="Handmade storybook portfolio featuring 3D, Unreal, animation, and environment work.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="icon" href="icon.png">
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+<meta charset="UTF-8">
+<title>Madison Lumpkin Portfolio</title>
+<link rel="stylesheet" href="./css/main.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  
-  <script src="js/main.js"></script>
+
+<div class="grain"></div>
+
+<div class="paper">
+
+<div class="spiral"></div>
+
+<header class="hero">
+<nav class="nav-pill">
+<a href="#concept">Concept</a>
+<a href="#traditional">Traditional</a>
+<a href="#3d">3D</a>
+<a href="#animation">Animation</a>
+<a href="#games">Games</a>
+<a href="#design">Design</a>
+<a href="#web">Web</a>
+</nav>
+
+<h1>Madison Lumpkin</h1>
+<p>Art & Design Student at Louisiana State University</p>
+</header>
+
+<section class="software">
+<h3>Software</h3>
+<div class="software-grid">
+<div class="soft">?</div>
+<div class="soft">?</div>
+<div class="soft">?</div>
+<div class="soft">?</div>
+<div class="soft">?</div>
+<div class="soft">?</div>
+<div class="soft">?</div>
+</div>
+</section>
+
+<section id="concept" class="section">
+<h2>Digital Illustration & Concept Art</h2>
+
+<div class="grid">
+
+<div class="card"
+onclick="openModal(
+'Character concept exploring color harmony',
+'./images/concept1.jpg'
+)">
+<img src="./img/illustrations/LightBeanConceptArt.png" alt="">
+</div>
+
+<div class="card"
+onclick="openModal(
+'Environment concept painting',
+'./images/concept2.jpg'
+)">
+<img src="./img/illustrations/Kingfisher.PNG" alt="">
+</div>
+
+<div class="card"
+onclick="openModal(
+'Creature design exploration',
+'./images/concept3.jpg'
+)">
+<img src="./img/illustrations/Untitled_Artwork (9).png" alt="">
+</div>
+
+</div>
+</section>
+
+<section id="traditional" class="section alt">
+<h2>Traditional Art</h2>
+<div class="grid">
+<div class="card" onclick="openModal('Charcoal life study')"></div>
+<div class="card" onclick="openModal('Watercolor plein air')"></div>
+</div>
+</section>
+
+<section id="3d" class="section">
+<h2>3D Modeling & Rendering</h2>
+<div class="grid">
+<div class="card" onclick="openModal('Blender character sculpt')"></div>
+</div>
+</section>
+
+<section id="animation" class="section alt">
+<h2>Animation</h2>
+<div class="grid">
+<div class="card" onclick="openModal('2D animation test')"></div>
+</div>
+</section>
+
+<section id="games" class="section">
+<h2>Game Development</h2>
+<div class="grid">
+<div class="card" onclick="openModal('Unity level design')"></div>
+</div>
+</section>
+
+<section id="design" class="section alt">
+<h2>Graphic Design</h2>
+<div class="grid">
+<div class="card" onclick="openModal('Brand identity project')"></div>
+</div>
+</section>
+
+<section id="web" class="section">
+<h2>Web Design</h2>
+<div class="grid">
+<div class="card" onclick="openModal('Portfolio website build')"></div>
+</div>
+</section>
+
+</div>
+
+<div id="modal" class="modal" onclick="closeModal()">
+<div class="modal-content" onclick="event.stopPropagation()">
+<span class="close" onclick="closeModal()">×</span>
+<p id="modalText"></p>
+</div>
+</div>
+
+<script src="./js/main.js"></script>
 </body>
 </html>
