@@ -33,13 +33,66 @@
 <section class="software">
 <h3>Software</h3>
 <div class="software-grid">
-<div class="soft">?</div>
-<div class="soft">?</div>
-<div class="soft">?</div>
-<div class="soft">?</div>
-<div class="soft">?</div>
-<div class="soft">?</div>
-<div class="soft">?</div>
+
+<div class="soft">
+    <img src="./img/logos/autodesk-maya-icon.webp" alt="">
+</div>
+
+<div class="soft">
+    <img src="./img/logos/Procreate-Logo.png" alt="">
+</div>
+
+<div class="soft">
+    <img src="./img/logos/unreal.webp" alt="">
+</div>
+
+<div class="soft">
+    <img src="./img/logos/illustrator.png" alt="">
+</div>
+
+<div class="soft">
+    <img src="./img/logos/Adobe_Photoshop_CC_icon.svg.png" alt="">
+</div>
+
+<div class="soft">
+    <img src="./img/logos/github-icon-2.svg" alt="">
+</div>
+
+<div class="soft">
+    <img src="./img/logos/Visual_Studio_Code_1.35_icon.svg.png" alt="">
+</div>
+
+<div class="soft">
+    <img src="./img/logos/nuke.jpg" alt="">
+</div>
+
+<div class="soft">
+    <img src="./img/logos/Adobe_Photoshop_CC_icon.svg.png" alt="">
+</div>
+
+<div class="soft">
+    <img src="./img/logos/Adobe_Photoshop_CC_icon.svg.png" alt="">
+</div>
+
+</div>
+</section>
+
+<section class="languages">
+<h3>Coding Languages</h3>
+<div class="languages-grid">
+
+<div class="lang">
+    <img src="./img/logos/ISO_C++_Logo.svg.png" alt="">
+</div>
+
+<div class="lang">
+    <img src="./img/logos/Python-logo-notext.svg.png" alt="">
+</div>
+
+<div class="lang">
+    <img src="./img/logos/javascript-logo-javascript-icon-transparent-free-png.webp" alt="">
+</div>
+
 </div>
 </section>
 
@@ -50,26 +103,29 @@
 
 <div class="card"
 onclick="openModal(
-'description placeholder CHANGE THIS',
-'./images/concept1.jpg'
+'Beyond the Light Game Concept Art',
+'add a description',
+'./img/illustrations/LightBeanConceptArt.png'
 )">
 <img src="./img/illustrations/LightBeanConceptArt.png" alt="">
 </div>
 
 <div class="card"
 onclick="openModal(
-'description placeholder CHANGE THIS',
-'./images/concept2.jpg'
+'Kingfisher Dock',
+'add a description',
+'./img/illustrations/Kingfisher.PNG'
 )">
 <img src="./img/illustrations/Kingfisher.PNG" alt="">
 </div>
 
 <div class="card"
 onclick="openModal(
-'description placeholder CHANGE THIS',
-'./images/concept3.jpg'
+'Mourice Character Design Concept',
+'add a description',
+'./img/illustrations/mourice.png'
 )">
-<img src="./img/illustrations/Untitled_Artwork (9).png" alt="">
+<img src="./img/illustrations/mourice.png" alt="">
 </div>
 
 </div>
@@ -124,6 +180,15 @@ onclick="openModal(
 <h2>Graphic Design</h2>
 <div class="grid">
 <div class="card" onclick="openModal('Brand identity project')"></div>
+
+<div class="card"
+onclick="openModal(
+'description placeholder CHANGE THIS',
+'./images/graphicdesign1.jpg'
+)">
+<img src="./img/graphic design/Madison_Lumpkin_P5_ColorSystems_Pelican.png" alt="">
+</div>
+
 </div>
 </section>
 
@@ -137,10 +202,14 @@ onclick="openModal(
 </div>
 
 <div id="modal" class="modal" onclick="closeModal()">
-<div class="modal-content" onclick="event.stopPropagation()">
-<span class="close" onclick="closeModal()">×</span>
-<p id="modalText"></p>
-</div>
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <span class="close" onclick="closeModal()">×</span>
+
+    <img id="modalImg" src="" alt="">
+    <h3 id="modalTitle"></h3>
+    <p id="modalText"></p>
+
+  </div>
 </div>
 
 <script src="./js/main.js"></script>
