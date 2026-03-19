@@ -113,10 +113,10 @@ height:80px;
 width:auto;
 object-fit:contain;
 max-width:100%;
-padding: 30px; 
+padding:30px;
 }
 
-/*coding languages section*/
+/* ===== LANGUAGES ===== */
 
 .languages{
 margin-top:40px;
@@ -142,7 +142,7 @@ height:80px;
 width:auto;
 object-fit:contain;
 max-width:100%;
-padding: 30px; 
+padding:30px;
 }
 
 /* ===== SECTIONS ===== */
@@ -162,33 +162,26 @@ margin-bottom:70px;
 font-size:clamp(30px,3vw,50px);
 }
 
-/* ===== REAL MASONRY GRID ===== */
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fill, minmax(320px,1fr));
-grid-auto-rows:10px;
-gap:35px;
-}
-
-/* artwork container */
+/* ===== GRID ===== */
 
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
+grid-auto-rows:10px;
 gap:40px;
 }
 
-/* artwork card */
+/* ===== CARD ===== */
+
 .card{
 background:#eae3d6;
 border-radius:12px;
 padding:12px;
 transition:.3s;
 cursor:pointer;
+position:relative;
 }
 
-/* image */
 .card img{
 width:100%;
 height:auto;
@@ -196,10 +189,44 @@ display:block;
 border-radius:8px;
 }
 
-/* hover */
 .card:hover{
 transform:translateY(-6px);
 box-shadow:0 20px 50px rgba(0,0,0,.25);
+}
+
+/* ===== GAME CARDS ===== */
+
+.game-card iframe{
+width:100%;
+aspect-ratio:16/9;
+border-radius:8px;
+margin-bottom:10px;
+}
+
+.game-info{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:5px 5px 0;
+}
+
+.game-info h4{
+margin:0;
+font-size:16px;
+}
+
+.game-info button{
+background:#3a342d;
+color:white;
+border:none;
+padding:6px 12px;
+border-radius:6px;
+cursor:pointer;
+font-size:12px;
+}
+
+.game-info button:hover{
+background:#5a5046;
 }
 
 /* ===== MODAL ===== */
@@ -216,22 +243,7 @@ align-items:center;
 justify-content:center;
 }
 
-.close{
-position:absolute;
-top:10px;
-right:20px;
-font-size:28px;
-cursor:pointer;
-}
-
-.modal-content img{
-width:100%;
-max-width:400px;
-height:auto;
-border-radius:10px;
-margin-bottom:25px;
-}
-
+/* modal box */
 .modal-content{
 max-width:700px;
 background:#fff;
@@ -241,19 +253,46 @@ display:flex;
 flex-direction:column;
 align-items:center;
 text-align:left;
+position:relative;
 }
 
+/* close button */
+.close{
+position:absolute;
+top:15px;
+right:20px;
+font-size:26px;
+cursor:pointer;
+z-index:10;
+color:#3a342d;
+background:#efe8dc;
+border-radius:50%;
+width:32px;
+height:32px;
+display:flex;
+align-items:center;
+justify-content:center;
+transition:.2s;
+}
+
+.close:hover{
+background:#d8d1c7;
+}
+
+/* modal media */
+#modalMedia img,
+#modalMedia iframe{
+width:65%;
+max-width:450px;
+border-radius:10px;
+margin-bottom:25px;
+}
+
+/* modal text */
 #modalTitle{
 font-family:"Playfair Display", serif;
 font-size:28px;
 margin-bottom:10px;
-align-self:flex-start;
-}
-
-#modalText{
-line-height:1.6;
-opacity:.85;
-max-width:520px;
 align-self:flex-start;
 }
 
@@ -268,6 +307,14 @@ opacity:.6;
 margin-top:-5px;
 }
 
+#modalText{
+line-height:1.6;
+opacity:.85;
+max-width:520px;
+align-self:flex-start;
+}
+
+/* software icons in modal */
 .modal-softwares{
 display:flex;
 gap:12px;
@@ -278,18 +325,4 @@ align-self:flex-end;
 .modal-softwares img{
 height:28px;
 opacity:.8;
-}
-
-#modalMedia img,
-#modalMedia iframe{
-width:65%;
-max-width:450px;
-border-radius:10px;
-margin-bottom:25px;
-}
-
-.card video{
-width:100%;
-border-radius:8px;
-display:block;
 }

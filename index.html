@@ -140,8 +140,7 @@ onclick="openModal(
 <section id="traditional" class="section alt">
 <h2>Traditional Art</h2>
 <div class="grid">
-<div class="card" onclick="openModal('Charcoal life study')"></div>
-<div class="card" onclick="openModal('Watercolor plein air')"></div>
+
 </div>
 </section>
 
@@ -171,7 +170,7 @@ onclick="openModal(
 <section id="animation" class="section alt">
 <h2>Animation</h2>
 <div class="grid">
-<div class="card" onclick="openModal('2D animation test')"></div>
+
 </div>
 </section>
 
@@ -180,14 +179,42 @@ onclick="openModal(
 
 <div class="grid">
 
-<div class="card"
-onclick="openVideoModal(
-'Plate Balance Prototype',
-'Physics-based food balancing mechanic.',
-'Game Design II',
-['./img/logos/unreal.webp'],
-'https: //www.youtube.com/embed/AKsFfHYbukY'
-)">
+<div class="card game-card">
+
+<iframe 
+src="https://www.youtube.com/embed/w0mLZMao0-w"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+<div class="game-info">
+    <h4>FPS The Factory Prototype</h4>
+    <button onclick="event.stopPropagation(); openModal(
+    'FPS The Factory Prototype',
+    'add description',
+    '',
+    'ART 2020 - Intro to Unreal',
+    ['./img/logos/unreal.webp']
+)">Details</button>
+</div>
+
+<iframe 
+src="https://www.youtube.com/embed/AKsFfHYbukY"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+<div class="game-info">
+    <h4>Mouse Clicker Puzzle Temple Prototype</h4>
+    <button onclick="event.stopPropagation(); openModal(
+    'Mouse Clicker Puzzle Temple Prototype',
+    'add description',
+    '',
+    'ART 2020 - Intro to Unreal',
+    ['./img/logos/unreal.webp']
+)">Details</button>
+</div>
+
 </div>
 
 </div>
