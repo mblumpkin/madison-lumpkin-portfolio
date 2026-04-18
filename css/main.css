@@ -1,5 +1,9 @@
 /* ===== BASE ===== */
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 margin:0;
 font-family:Inter, sans-serif;
@@ -368,3 +372,83 @@ opacity:.8;
 .arrow:hover{
     background:#d8d1c7;
 }
+
+/* ===== ABOUT ===== */
+
+.about{
+padding:100px 10%;
+text-align:center;
+max-width:900px;
+margin:auto;
+}
+
+.about h2{
+font-family:"Playfair Display", serif;
+font-size:clamp(30px,3vw,50px);
+margin-bottom:30px;
+}
+
+.about p{
+line-height:1.7;
+opacity:.85;
+margin-bottom:20px;
+}
+
+/* ===== FOOTER ===== */
+
+.footer{
+background:#eae3d6;
+padding:80px 20px;
+text-align:center;
+margin-top:80px;
+border-top:1px solid #ddd2c2;
+}
+
+.footer h2{
+font-family:"Playfair Display", serif;
+margin-bottom:20px;
+}
+
+.footer p{
+margin:8px 0;
+opacity:.8;
+}
+
+.footer .copyright{
+margin-top:25px;
+font-size:12px;
+opacity:.5;
+}
+
+/* ===== CONTACT ICONS ===== */
+.contact-icons{
+display:flex;
+justify-content:center;
+gap:25px;
+margin-top:25px;
+}
+
+.contact-icons a{
+width:55px;
+height:55px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+
+background:#3a342d; /* DARK background */
+
+box-shadow:0 6px 15px rgba(0,0,0,.15);
+transition:.25s;
+}
+
+.contact-icons img{
+height:28px;
+width:auto;
+}
+/* hover effect */
+.contact-icons a:hover{
+transform:translateY(-5px);
+background:#e2d9cc;
+}
+
