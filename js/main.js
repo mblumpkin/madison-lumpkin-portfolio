@@ -17,16 +17,36 @@ function resizeAll(){
 window.addEventListener('load', resizeAll);
 window.addEventListener('resize', resizeAll);
 
-function openModal(title, description, image = "", className = "", softwares = []){
+let currentSlide = 0;
+let slides = [];
+
+function openModal(title, description, mediaArray = [], className = "", softwares = []){
     document.getElementById("modal").style.display = "flex";
 
-    const media = document.getElementById("modalMedia");
+    const track = document.getElementById("carouselTrack");
+    track.innerHTML = "";
+    slides = [];
 
-    if(image){
-        media.innerHTML = `<img src="${image}">`;
-    } else {
-        media.innerHTML = "";
-    }
+    mediaArray.forEach((media, index) => {
+        let el;
+
+        if(media.includes("youtube") || media.includes("embed")){
+            el = document.createElement("iframe");
+            el.src = media;
+            el.setAttribute("frameborder", "0");
+            el.setAttribute("allowfullscreen", true);
+        } else {
+            el = document.createElement("img");
+            el.src = media;
+        }
+
+        if(index === 0) el.classList.add("active");
+
+        track.appendChild(el);
+        slides.push(el);
+    });
+
+    currentSlide = 0;
 
     document.getElementById("modalTitle").innerText = title;
     document.getElementById("modalText").innerText = description;
@@ -42,7 +62,23 @@ function openModal(title, description, image = "", className = "", softwares = [
     });
 }
 
+function showSlide(index){
+    slides.forEach(slide => slide.classList.remove("active"));
+    slides[index].classList.add("active");
+}
+
+function nextSlide(){
+    if(slides.length === 0) return;
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+}
+
+function prevSlide(){
+    if(slides.length === 0) return;
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+}
+
 function closeModal(){
     document.getElementById("modal").style.display = "none";
-    document.getElementById("modalMedia").innerHTML = ""; // stops video / clears
 }

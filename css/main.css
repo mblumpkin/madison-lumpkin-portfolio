@@ -326,3 +326,45 @@ align-self:flex-end;
 height:28px;
 opacity:.8;
 }
+
+.carousel{
+    position:relative;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#carouselTrack{
+    width:65%;
+    max-width:450px;
+    overflow:hidden;
+    position:relative;
+}
+
+.carousel img,
+.carousel iframe{
+    width:100%;
+    border-radius:10px;
+    display:none;
+}
+
+.carousel .active{
+    display:block;
+}
+
+/* arrows */
+.arrow{
+    background:#efe8dc;
+    border:none;
+    font-size:28px;
+    cursor:pointer;
+    padding:10px 14px;
+    border-radius:50%;
+    margin:0 10px;
+    transition:.2s;
+}
+
+.arrow:hover{
+    background:#d8d1c7;
+}
