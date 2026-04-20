@@ -27,26 +27,30 @@ function openModal(title, description, mediaArray = [], className = "", software
     track.innerHTML = "";
     slides = [];
 
-    mediaArray.forEach((media, index) => {
-        let el;
+    mediaArray.forEach((media) => {
+    let el;
 
-        if(media.includes("youtube") || media.includes("embed")){
-            el = document.createElement("iframe");
-            el.src = media;
-            el.setAttribute("frameborder", "0");
-            el.setAttribute("allowfullscreen", true);
-        } else {
-            el = document.createElement("img");
-            el.src = media;
-        }
+    if (media.includes("youtube.com/embed")) {
+        el = document.createElement("iframe");
+        el.src = media;
+        el.setAttribute("frameborder", "0");
+        el.setAttribute("allowfullscreen", "");
+        el.setAttribute(
+            "allow",
+            "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        );
+    } else {
+        el = document.createElement("img");
+        el.src = media;
+    }
 
-        if(index === 0) el.classList.add("active");
-
-        track.appendChild(el);
-        slides.push(el);
-    });
+    track.appendChild(el);
+    slides.push(el);
+});
 
     currentSlide = 0;
+
+    showSlide(currentSlide);
 
     document.getElementById("modalTitle").innerText = title;
     document.getElementById("modalText").innerText = description;
@@ -63,8 +67,9 @@ function openModal(title, description, mediaArray = [], className = "", software
 }
 
 function showSlide(index){
-    slides.forEach(slide => slide.classList.remove("active"));
-    slides[index].classList.add("active");
+    slides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === index);
+    });
 }
 
 function nextSlide(){
@@ -78,6 +83,12 @@ function prevSlide(){
     currentSlide = (currentSlide - 1 + slides.length) % slides.length;
     showSlide(currentSlide);
 }
+
+currentSlide = 0;
+
+requestAnimationFrame(() => {
+    showSlide(0);
+});
 
 function closeModal(){
     document.getElementById("modal").style.display = "none";

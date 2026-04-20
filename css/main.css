@@ -339,22 +339,26 @@ opacity:.8;
     justify-content:center;
 }
 
-#carouselTrack{
-    width:65%;
-    max-width:450px;
-    overflow:hidden;
-    position:relative;
+#carouselTrack {
+    width: 65%;
+    max-width: 450px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-.carousel img,
-.carousel iframe{
-    width:100%;
-    border-radius:10px;
-    display:none;
+#carouselTrack img,
+#carouselTrack iframe {
+    width: 100%;
+    border-radius: 10px;
+    display: none;
 }
 
-.carousel .active{
-    display:block;
+#carouselTrack img.active,
+#carouselTrack iframe.active {
+    display: block;
 }
 
 /* arrows */
