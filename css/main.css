@@ -456,3 +456,9 @@ transform:translateY(-5px);
 background:#e2d9cc;
 }
 
+.card iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    display: block;
+}

@@ -1,12 +1,15 @@
 function resizeGridItem(item){
-    const img = item.querySelector('img');
-    if(!img) return; // prevents crashes
+    const media = item.querySelector('img, iframe');
+    if(!media) return;
 
     const grid = document.querySelector(".grid");
     const rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
     const rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('gap'));
 
-    const rowSpan = Math.ceil((img.getBoundingClientRect().height + rowGap) / (rowHeight + rowGap));
+    const rowSpan = Math.ceil(
+        (media.getBoundingClientRect().height + rowGap) / (rowHeight + rowGap)
+    );
+
     item.style.gridRowEnd = "span " + rowSpan;
 }
 
@@ -16,6 +19,12 @@ function resizeAll(){
 
 window.addEventListener('load', resizeAll);
 window.addEventListener('resize', resizeAll);
+
+document.querySelectorAll('img, iframe').forEach(el => {
+    el.addEventListener('load', () => {
+        resizeAll();
+    });
+});
 
 let currentSlide = 0;
 let slides = [];
