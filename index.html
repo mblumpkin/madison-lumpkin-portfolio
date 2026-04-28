@@ -35,17 +35,29 @@
 <p>Art & Design Student at Louisiana State University</p>
 </header>
 
-<!-- ===== ABOUT ===== -->
 <section id="about" class="about">
 <h2>About Me</h2>
 
-<p>
-1st paragraph
-</p>
+<div class="about-content">
 
-<p>
-2nd paragraph
-</p>
+    <div class="about-image">
+        <img src="./img/profile.jpeg" alt="Madison Lumpkin">
+    </div>
+
+    <div class="about-text">
+        <p>
+        I am a student at Louisiana State University in Baton Rouge, currently pursuing a BA in Arts & Design and an MS in Digital Media Arts & Engineering. 
+        With a foundation in traditional painting and drawing, my practice has evolved into a deep interest in 3D art and digital creation. 
+        I am particularly drawn to the process of building experiences through 3D animation, modeling, rendering, programming, and texturing.
+        </p>
+
+        <p>
+        I absolutely love learning new processes, software, and artistic mediums. 
+        Outside of my work, I’m a tennis player and coach, a cook, a jewelry maker, and an avid reader, among many other interests.
+        </p>
+    </div>
+
+</div>
 </section>
 
 <!-- ===== SOFTWARE ===== -->
@@ -87,7 +99,7 @@
 
 <div class="card" onclick="openModal(
 'Beyond the Light Game Concept Art',
-'add description',
+'For my Intro to Unreal class, I started a prototype for a light & shadow themed game. After the class, I took it on as a personal project and have been creating concept art to figure out the style, color palette, enviornment, etc. ',
 ['./img/illustrations/LightBeanConceptArt.png'],
 'Personal Project',
 ['./img/logos/Procreate-Logo.png','./img/logos/Adobe_Photoshop_CC_icon.svg.png']
@@ -97,7 +109,7 @@
 
 <div class="card" onclick="openModal(
 'Kingfisher Dock',
-'add description',
+'As I got more into creating concept art, I found myself especially drawn to working from color palettes. For this illustration, I developed the palette first, using it to guide the scene, mood, and overall visual direction.',
 ['./img/illustrations/Kingfisher.PNG'],
 'Personal Project',
 ['./img/logos/Procreate-Logo.png','./img/logos/Adobe_Photoshop_CC_icon.svg.png']
@@ -107,7 +119,7 @@
 
 <div class="card" onclick="openModal(
 'Mourice Character Concept Art',
-'add description',
+'A character design I created when considering a more sketchy-style than I usually go for. I wanted to play around with how the shape and coloring of an animal can be reflected in a human design.',
 ['./img/illustrations/mourice.png'],
 'Personal Project',
 ['./img/logos/Procreate-Logo.png']
@@ -117,7 +129,7 @@
 
 <div class="card" onclick="openModal(
 'Madi Bee Icon',
-'Personal Project',
+'A profile icon I designed for my art and jewelry branding under the name of Madi Bee.',
 ['./img/illustrations/MadiBee.png'],
 'Profile Design',
 ['./img/logos/Procreate-Logo.png']
@@ -127,8 +139,8 @@
 
 <div class="card" onclick="openModal(
 'X-Emplar, School of Heroes - Female Main Character Customization Example',
-'add description',
-['./img/illustrations/FemaleMain.png'],
+'As part of my assistantship with Pennington Biomedical and the LSU DMAE Center, one of my tasks was to create the main character designs as well as examples of the possible character customizations. This is an example of the main super female character and how she can be customized. The project is to create a game that encourages preteens to be healthy, mindful, and active through a fun and engaging superhero storyline.',
+['./img/illustrations/FemaleMain.png', './img/illustrations/FemalePossibleDesigns.jpeg'],
 'Game Dev Assistantship Work',
 ['./img/logos/Procreate-Logo.png']
 )">
@@ -137,7 +149,7 @@
 
 <div class="card" onclick="openModal(
 'X-Emplar, School of Heroes - Male Main Character Customization Example',
-'add description',
+'As part of my assistantship with Pennington Biomedical and the LSU DMAE Center, one of my tasks was to create the main character designs as well as examples of the possible character customizations. This is an example of the main super male character and how he can be customized. The project is to create a game that encourages preteens to be healthy, mindful, and active through a fun and engaging superhero storyline.',
 ['./img/illustrations/MaleMain.png'],
 'Game Dev Assistantship Work',
 ['./img/logos/Procreate-Logo.png']
@@ -147,7 +159,7 @@
 
 <div class="card" onclick="openModal(
 'Cypress Corporation Book Cover',
-'add description',
+'I was commissioned by a new author to create the artwork for her book cover. The story follows a young girl surviving and exploring an apocalyptic world with a sense of hope, and I wanted to reflect her emotional state --loneliness and isolation-- through the composition. A dying cypress tree serves as the central visual element beside the main character, emphasizing that sense of solitude within the environment. This piece is another example of my process of developing color palettes early to help establish mood and visual direction.',
 ['./img/illustrations/CypressCorpCover.png', './img/illustrations/FullCoverCypress.png'],
 'Freelance Commision - Book Cover Design',
 ['./img/logos/Procreate-Logo.png', './img/logos/Adobe_Photoshop_CC_icon.svg.png', './img/logos/illustrator.png']
@@ -164,19 +176,19 @@
 
 <div class="grid">
 
-<div class="card" onclick="openModal('Turtle Painting','', ['./img/traditional/Turtle.jpeg'])">
+<div class="card" onclick="openModal('Coastal Turtle','2023, Acrylic Painting on Canvas', ['./img/traditional/Turtle.jpeg'])">
 <img src="./img/traditional/Turtle.jpeg">
 </div>
 
-<div class="card" onclick="openModal('Ragdoll Kitty','', ['./img/traditional/RagdollKitty.jpeg'])">
+<div class="card" onclick="openModal('Ragdoll Kitten','2026, Gouche Painting on Watercolor Paper', ['./img/traditional/RagdollKitty.jpeg'])">
 <img src="./img/traditional/RagdollKitty.jpeg">
 </div>
 
-<div class="card" onclick="openModal('Manatees','', ['./img/traditional/Manatees.jpeg'])">
+<div class="card" onclick="openModal('Manatees','2025, Acrylic Painting on Canvas', ['./img/traditional/Manatees.jpeg'])">
 <img src="./img/traditional/Manatees.jpeg">
 </div>
 
-<div class="card" onclick="openModal('Manatees','', ['./img/traditional/Flowers.jpeg'])">
+<div class="card" onclick="openModal('Signs of Growth','', ['./img/traditional/Flowers.jpeg'])">
 <img src="./img/traditional/Flowers.jpeg">
 </div>
 
@@ -232,7 +244,7 @@
 'Madi Bee Icon',
 'add description',
 ['./img/virtualSpace/overview_image.jpg', './img/virtualSpace/cliffside_image.jpg', './img/virtualSpace/main_shop_image.jpg', 
-'./img/virtualSpace/boat_image.jpg', './img/virtualSpace/right_hut_image.jpg'],
+'./img/virtualSpace/boat_image.jpg', './img/virtualSpace/right_hut_image.jpg', './img/virtualSpace/IslandSketch.jpeg', './img/virtualSpace/BoatSketch.jpeg'],
 'Icon Design',
 ['./img/logos/autodesk-maya-icon.webp','./img/logos/arnold.webp']
 )">
@@ -267,7 +279,7 @@
 'add hguefhvef',
 ['https://www.youtube.com/embed/w9Q57JE0Bqw?si=NlFaP3gqCdtYFCst'],
 'Animation',
-['./img/logos/autodesk-maya-icon.webp',]
+['./img/logos/autodesk-maya-icon.webp']
 )">
     <iframe 
         src="https://www.youtube.com/embed/w9Q57JE0Bqw?si=NlFaP3gqCdtYFCst"
@@ -308,6 +320,20 @@
 )">
     <iframe 
         src="https://www.youtube.com/embed/AKsFfHYbukY"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+</div>
+
+<div class="card" onclick="openModal(
+'Mouse Clicker Puzzle Prototype',
+'Puzzle mechanic prototype',
+['https://www.youtube.com/embed/jKFuuUzCans'],
+'Unreal Engine',
+['./img/logos/unreal.webp']
+)">
+    <iframe 
+        src="https://www.youtube.com/embed/jKFuuUzCans"
         frameborder="0"
         allowfullscreen>
     </iframe>

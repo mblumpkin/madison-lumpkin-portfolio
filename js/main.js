@@ -73,6 +73,17 @@ function openModal(title, description, mediaArray = [], className = "", software
         img.src = soft;
         softContainer.appendChild(img);
     });
+
+    const arrows = document.querySelectorAll(".arrow");
+
+    if (slides.length <= 1) {
+        arrows.forEach(arrow => arrow.style.display = "none");
+    } else {
+        arrows.forEach(arrow => arrow.style.display = "block");
+    }
+
+    document.body.style.overflow = "hidden";
+   document.body.classList.add("modal-open");
 }
 
 function showSlide(index){
@@ -101,4 +112,7 @@ requestAnimationFrame(() => {
 
 function closeModal(){
     document.getElementById("modal").style.display = "none";
+    document.body.style.overflow = "auto";
+
+      document.body.classList.remove("modal-open");
 }
