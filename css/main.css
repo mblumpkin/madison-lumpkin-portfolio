@@ -69,30 +69,52 @@ margin:0;
 
 /* ===== NAV PILL ===== */
 
-.nav-pill{
-position: sticky;
-top: 20px;
-z-index: 1000;
+.nav-pill {
+    position: sticky;
+    top: 20px; 
+    z-index: 1000;
 
-background:#efe8dc;
-padding:14px 32px;
-border-radius:50px;
-box-shadow:0 8px 20px rgba(60,50,40,.15);
-border:1px solid #e2d9cc;
-display: inline-flex;
+    width: fit-content;
+    margin: 0 auto;
+
+    display: flex;
+    gap: 0.5rem;
+
+    padding: 8px 14px;
+
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-radius: 999px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
 
-.nav-pill a{
-margin:0 16px;
-font-size:13px;
-color:#3a342d;
-text-decoration:none;
-letter-spacing:1.5px;
-transition:.25s;
+.nav-pill a {
+    text-decoration: none;
+    color: #333;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+
+    padding: 6px 12px;
+    border-radius: 999px;
+
+    transition: all 0.25s ease;
 }
 
-.nav-pill a:hover{
-color:#a99982;
+.nav-pill a:hover {
+    background: rgba(0,0,0,0.08);
+}
+
+.nav-pill a:active {
+    transform: scale(0.95);
+}
+
+.nav-pill.scrolled {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
 }
 
 /* ===== SOFTWARE ===== */
