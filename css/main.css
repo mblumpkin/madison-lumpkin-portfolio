@@ -198,29 +198,43 @@ display:grid;
 grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
 grid-auto-rows:10px;
 gap:40px;
+align-items:start;
 }
-
-/* ===== CARD ===== */
 
 .card{
-background:#eae3d6;
-border-radius:12px;
-padding:12px;
-transition:.3s;
+background:#efe8dc;
+border-radius:22px;
+padding:18px;
+overflow:visible;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:.25s ease;
+box-sizing:border-box;
 cursor:pointer;
-position:relative;
-}
-
-.card img{
-width:100%;
-height:auto;
-display:block;
-border-radius:8px;
 }
 
 .card:hover{
 transform:translateY(-6px);
 box-shadow:0 20px 50px rgba(0,0,0,.25);
+}
+
+.card img,
+.card iframe{
+width:100%;
+height:auto;
+display:block;
+border-radius:16px;
+border:none;
+box-sizing:border-box;
+}
+
+.card-info{
+padding:14px 4px 0;
+}
+
+.web-card{
+text-decoration:none;
+color:inherit;
+display:block;
 }
 
 /* ===== GAME CARDS ===== */
@@ -521,4 +535,9 @@ text-align:center;
 max-width:250px;
 margin:auto;
 }
+}
+
+.web-card:hover {
+    transform: translateY(-5px);
+    transition: 0.2s ease;
 }

@@ -1,30 +1,35 @@
 function resizeGridItem(item){
-    const media = item.querySelector('img, iframe');
-    if(!media) return;
+    const grid = item.parentElement;
 
-    const grid = document.querySelector(".grid");
-    const rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
-    const rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('gap'));
+    const rowHeight = parseInt(getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+    const rowGap = parseInt(getComputedStyle(grid).getPropertyValue('gap'));
 
-    const rowSpan = Math.ceil(
-        (media.getBoundingClientRect().height + rowGap) / (rowHeight + rowGap)
-    );
+    const height = item.getBoundingClientRect().height;
 
-    item.style.gridRowEnd = "span " + rowSpan;
+    const rowSpan = Math.ceil((height + rowGap) / (rowHeight + rowGap));
+
+    item.style.gridRowEnd = `span ${rowSpan}`;
 }
 
 function resizeAll(){
     document.querySelectorAll('.card').forEach(resizeGridItem);
 }
 
-window.addEventListener('load', resizeAll);
-window.addEventListener('resize', resizeAll);
+window.addEventListener('load', () => {
+    resizeAll();
 
-document.querySelectorAll('img, iframe').forEach(el => {
-    el.addEventListener('load', () => {
-        resizeAll();
+    document.querySelectorAll('.card img').forEach(img => {
+        if (!img.complete) {
+            img.addEventListener('load', resizeAll);
+        }
     });
+
+    setTimeout(resizeAll, 300);
+    setTimeout(resizeAll, 800);
+    setTimeout(resizeAll, 1500);
 });
+
+window.addEventListener('resize', resizeAll);
 
 let currentSlide = 0;
 let slides = [];
