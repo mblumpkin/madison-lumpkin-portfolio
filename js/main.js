@@ -1,6 +1,3 @@
-/* ================================
-   MASONRY GRID RESIZING
-================================ */
 
 function resizeGridItem(item){
     const grid = item.parentElement;
@@ -35,11 +32,6 @@ window.addEventListener("load", () => {
 });
 
 window.addEventListener("resize", resizeAll);
-
-
-/* ================================
-   MODAL + CAROUSEL
-================================ */
 
 let currentSlide = 0;
 let slides = [];
@@ -125,11 +117,6 @@ function prevSlide(){
     currentSlide = (currentSlide - 1 + slides.length) % slides.length;
     showSlide(currentSlide);
 }
-
-
-/* ================================
-   NAVIGATION
-================================ */
 
 function toggleMenu(){
     document.getElementById("navMenu").classList.toggle("open");
