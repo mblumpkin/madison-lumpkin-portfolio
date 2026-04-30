@@ -3,17 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <title>Madison Lumpkin Portfolio</title>
-<meta name="description" content="This site will act as my styalized portfolio for my personal and college course work for Art & Design.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+<meta name="description" content="Stylized portfolio for personal and college coursework in Art & Design.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta property="og:title" content="Madison Lumpkin Portfolio">
+<meta property="og:type" content="website">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
 
 <link rel="icon" type="image/png" href="./img/faviconM.png">
 <link rel="stylesheet" href="./css/main.css">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -22,445 +24,428 @@
 
 <div class="paper">
 
-<nav class="nav-pill">
-<a href="#about">About</a>
-<a href="#concept">Concept</a>
-<a href="#traditional">Traditional</a>
-<a href="#3d">3D</a>
-<a href="#animation">Animation</a>
-<a href="#games">Games</a>
-<a href="#design">Design</a>
-<a href="#web">Web</a>
-<a href="#contact">Contact</a>
-</nav>
-
-<div class="spiral"></div>
-
-<header class="hero">
-
-<h1>Madison Lumpkin</h1>
-<p>Art & Design Student at Louisiana State University</p>
-</header>
-
-<section id="about" class="about">
-<h2>About Me</h2>
-
-<div class="about-content">
-
-    <div class="about-image">
-        <img src="./img/profile.jpeg" alt="Madison Lumpkin">
-    </div>
-
-    <div class="about-text">
-        <p>
-        I am a student at Louisiana State University in Baton Rouge, currently pursuing a BA in Arts & Design and an MS in Digital Media Arts & Engineering. 
-        With a foundation in traditional painting and drawing, my practice has evolved into a deep interest in 3D art and digital creation. 
-        I am particularly drawn to the process of building experiences through 3D animation, modeling, rendering, programming, and texturing.
-        </p>
-
-        <p>
-        I absolutely love learning new processes, software, and artistic mediums. 
-        Outside of my work, I’m a tennis player and coach, a cook, a jewelry maker, and an avid reader, among many other interests.
-        </p>
-    </div>
-
-</div>
-</section>
-
-<!-- ===== SOFTWARE ===== -->
-<section class="software">
-<h3>Software</h3>
-
-<div class="software-grid">
-<div class="soft"><img src="./img/logos/autodesk-maya-icon.webp" alt="autodesk maya icon"></div>
-<div class="soft"><img src="./img/logos/Procreate-Logo.png" alt="procreate icon"></div>
-<div class="soft"><img src="./img/logos/unreal.webp" alt="unreal icon"></div>
-<div class="soft"><img src="./img/logos/illustrator.png" alt="adobe illustrator icon"></div>
-<div class="soft"><img src="./img/logos/Adobe_Photoshop_CC_icon.svg.png" alt="adobe photoshop icon"></div>
-<div class="soft"><img src="./img/logos/github-icon-2.svg" alt="github icon"></div>
-<div class="soft"><img src="./img/logos/Visual_Studio_Code_1.35_icon.svg.png" alt="visual studio code icon"></div>
-<div class="soft"><img src="./img/logos/nuke.jpg" alt="nuke icon"></div>
-<div class="soft"><img src="./img/logos/spine_badge.png" alt="spine2d icon"></div>
-<div class="soft"><img src="./img/logos/Godot_icon.svg.png" alt="godot game engine icon"></div>
-<div class="soft"><img src="./img/logos/arnold.webp" alt="arnold renderer icon"></div>
-</div>
-</section>
-
-<!-- ===== LANGUAGES ===== -->
-<section class="languages">
-<h3>Coding Languages</h3>
-
-<div class="languages-grid">
-<div class="lang"><img src="./img/logos/ISO_C++_Logo.svg.png" alt="c++ icon"></div>
-<div class="lang"><img src="./img/logos/Python-logo-notext.svg.png" alt="python icon"></div>
-<div class="lang"><img src="./img/logos/javascript-logo-javascript-icon-transparent-free-png.webp" alt="javascript icon"></div>
-<div class="lang"><img src="./img/logos/CSS3_logo_and_wordmark.svg.png" alt="css icon"></div>
-</div>
-</section>
-
-<!-- ===== CONCEPT ===== -->
-<section id="concept" class="section">
-<h2>Digital Illustration & Concept Art</h2>
-
-<div class="grid">
-
-<div class="card" onclick="openModal(
-'Beyond the Light Game Concept Art',
-'For my Intro to Unreal class, I started a prototype for a light & shadow themed game. After the class, I took it on as a personal project and have been creating concept art to figure out the style, color palette, enviornment, etc. ',
-['./img/illustrations/LightBeanConceptArt.png'],
-'Personal Project',
-['./img/logos/Procreate-Logo.png','./img/logos/Adobe_Photoshop_CC_icon.svg.png']
-)">
-<img src="./img/illustrations/LightBeanConceptArt.png" alt="concept art for beyond the light game">
-</div>
-
-<div class="card" onclick="openModal(
-'Kingfisher Dock',
-'As I got more into creating concept art, I found myself especially drawn to working from color palettes. For this illustration, I developed the palette first, using it to guide the scene, mood, and overall visual direction.',
-['./img/illustrations/Kingfisher.PNG'],
-'Personal Project',
-['./img/logos/Procreate-Logo.png','./img/logos/Adobe_Photoshop_CC_icon.svg.png']
-)">
-<img src="./img/illustrations/Kingfisher.PNG" alt="kingerfisher on a dock illustration">
-</div>
-
-<div class="card" onclick="openModal(
-'Mourice Character Concept Art',
-'A character design I created when considering a more sketchy-style than I usually go for. I wanted to play around with how the shape and coloring of an animal can be reflected in a human design.',
-['./img/illustrations/mourice.png'],
-'Personal Project',
-['./img/logos/Procreate-Logo.png']
-)">
-<img src="./img/illustrations/mourice.png" alt="character design art">
-</div>
-
-<div class="card" onclick="openModal(
-'Madi Bee Icon',
-'A profile icon I designed for my art and jewelry branding under the name of Madi Bee.',
-['./img/illustrations/MadiBee.png'],
-'Profile Design',
-['./img/logos/Procreate-Logo.png']
-)">
-<img src="./img/illustrations/MadiBee.png" alt="icon for Madi Bee designs">
-</div>
-
-<div class="card" onclick="openModal(
-'X-Emplar, School of Heroes - Female Main Character Customization Example',
-'As part of my assistantship with Pennington Biomedical and the LSU DMAE Center, one of my tasks was to create the main character designs as well as examples of the possible character customizations. This is an example of the main super female character and how she can be customized. The project is to create a game that encourages preteens to be healthy, mindful, and active through a fun and engaging superhero storyline.',
-['./img/illustrations/FemaleMain.png', './img/illustrations/FemalePossibleDesigns.jpeg'],
-'Game Dev Assistantship Work',
-['./img/logos/Procreate-Logo.png']
-)">
-<img src="./img/illustrations/FemaleMain.png" alt="female main character example for game">
-</div>
-
-<div class="card" onclick="openModal(
-'X-Emplar, School of Heroes - Male Main Character Customization Example',
-'As part of my assistantship with Pennington Biomedical and the LSU DMAE Center, one of my tasks was to create the main character designs as well as examples of the possible character customizations. This is an example of the main super male character and how he can be customized. The project is to create a game that encourages preteens to be healthy, mindful, and active through a fun and engaging superhero storyline.',
-['./img/illustrations/MaleMain.png'],
-'Game Dev Assistantship Work',
-['./img/logos/Procreate-Logo.png']
-)">
-<img src="./img/illustrations/MaleMain.png" alt="male main character example for game">
-</div>
-
-<div class="card" onclick="openModal(
-'Cypress Corporation Book Cover',
-'I was commissioned by a new author to create the artwork for her book cover. The story follows a young girl surviving and exploring an apocalyptic world with a sense of hope, and I wanted to reflect her emotional state --loneliness and isolation-- through the composition. A dying cypress tree serves as the central visual element beside the main character, emphasizing that sense of solitude within the environment. This piece is another example of my process of developing color palettes early to help establish mood and visual direction.',
-['./img/illustrations/CypressCorpCover.png', './img/illustrations/FullCoverCypress.png'],
-'Freelance Commision - Book Cover Design',
-['./img/logos/Procreate-Logo.png', './img/logos/Adobe_Photoshop_CC_icon.svg.png', './img/logos/illustrator.png']
-)">
-<img src="./img/illustrations/CypressCorpCover.png" alt="cypress corp book cover design">
-</div>
-
-</div>
-</section>
-
-<!-- ===== TRADITIONAL ===== -->
-<section id="traditional" class="section alt">
-<h2>Traditional Art</h2>
-
-<div class="grid">
-
-<div class="card" onclick="openModal('Coastal Turtle','2023, Acrylic Painting on Canvas, Commission', ['./img/traditional/Turtle.jpeg'])">
-<img src="./img/traditional/Turtle.jpeg" alt="turtle on a coast painting">
-</div>
-
-<div class="card" onclick="openModal('Ragdoll Kitten','2026, Gouche Painting on Watercolor Paper, Personal', ['./img/traditional/RagdollKitty.jpeg'])">
-<img src="./img/traditional/RagdollKitty.jpeg" alt="ragdoll kitten painting">
-</div>
-
-<div class="card" onclick="openModal('Lost and Found to Nature','2025, Acrylic Painting on Canvas, Personal', ['./img/traditional/Manatees.jpeg'])">
-<img src="./img/traditional/Manatees.jpeg" alt="lone boat drifting">
-</div>
-
-<div class="card" onclick="openModal('Signs of Growth','2026, Acrylic Painting on Canvas, Personal', ['./img/traditional/Flowers.jpeg'])">
-<img src="./img/traditional/Flowers.jpeg" alt="blue flowers over portrait">
-</div>
-
-<div class="card" onclick="openModal('Beach Scene','2025, Acrylic Painting on Canvas, Personal', ['./img/traditional/Beach.jpeg'])">
-<img src="./img/traditional/Beach.jpeg" alt="beach scene">
-</div>
-
-<div class="card" onclick="openModal('Bridal Party','2025, Acrylic Painting on Canvas, Uncanny Gallery for LSU', ['./img/traditional/BridalPartyPainting.PNG'])">
-<img src="./img/traditional/BridalPartyPainting.PNG" alt="bride in front of mirror and candles">
-</div>
-
-<div class="card" onclick="openModal('Jazzland','2024, Acrylic Painting on Canvas, Commission', ['./img/traditional/Jazzland.jpg'])">
-<img src="./img/traditional/Jazzland.jpg" alt="whimsy New Orleans">
-</div>
-
-<div class="card" onclick="openModal('Glass, Wood, & Metal','2024, Lead Pencil on Paper, Drawing Composition Course Project', ['./img/traditional/DRAWING COMP. - Glass, Wood, Metal.jpeg'])">
-<img src="./img/traditional/DRAWING COMP. - Glass, Wood, Metal.jpeg" alt="texture still life">
-</div>
-
-<div class="card" onclick="openModal('Texture Still Life','2024, Lead Pencil on Paper, Drawing Composition Course Project', ['./img/traditional/DRAWING COMP. - Texture Still Life.jpeg'])">
-<img src="./img/traditional/DRAWING COMP. - Texture Still Life.jpeg" alt="texture still life">
-</div>
-
-<div class="card" onclick="openModal('Transformation','2024, Charcoal & Colored Pencil on Paper, Drawing Composition Project', ['./img/traditional/DRAWING COMP. - Transformation.jpeg'])">
-<img src="./img/traditional/DRAWING COMP. - Transformation.jpeg" alt="charcoal drawing of native american tribe surrounded by industrial transformation">
-</div>
-
-<div class="card" onclick="openModal('Bone Still Life','2024, Charcoal on Paper, Drawing Composition Project', ['./img/traditional/IMG_6783.jpg'])">
-<img src="./img/traditional/IMG_6783.jpg" alt="bone charcoal still life">
-</div>
-
-</div>
-</section>
-
-<!-- ===== 3D ===== -->
-<section id="3d" class="section">
-<h2>3D Modeling & Rendering</h2>
-
-<div class="grid">
-
-<div class="card" onclick="openModal(
-'Isometric Room - Abandoned Writer Room',
-'This project was an isometric room design inspired by the concept of a writing room that had been left behind by a fleeing author. Around the room, there are photos of his own inspiration as well as the last piece he ever wrote. This project got me really immersed in creating a story through details.',
-['./img/virtualSpace/ML_Isometric_View.jpg', './img/virtualSpace/ML_Bookshelf_View.jpg', 
-'./img/virtualSpace/ML_Ground_View.jpg', './img/virtualSpace/ML_Desk_View.jpg', './img/virtualSpace/ML_Typewriter_View.jpg'],
-'Virtual Space Course',
-['./img/logos/autodesk-maya-icon.webp', './img/logos/Adobe_Photoshop_CC_icon.svg.png', './img/logos/arnold.webp']
-)">
-<img src="./img/virtualSpace/ML_Isometric_View.jpg" alt="abandoned writing isometric room">
-</div>
-
-<div class="card" onclick="openModal(
-'Environmental Design - Foggy Fishing Port',
-'This project was my first attempt at environmental modeling in Maya for my Virtual Space course at LSU. I aimed to create a small fishing town with a foggy, mysterious atmosphere.ce course at LSU. I wanted to create a small fishing town with a foggy and mysterious mood. ',
-['./img/virtualSpace/overview_image.jpg', './img/virtualSpace/main_shop_image.jpg', 
-'./img/virtualSpace/boat_image.jpg', './img/virtualSpace/right_hut_image.jpg', './img/virtualSpace/IslandSketch.jpeg', './img/virtualSpace/BoatSketch.jpeg'],
-'Virtual Space Course',
-['./img/logos/autodesk-maya-icon.webp','./img/logos/arnold.webp']
-)">
-<img src="./img/virtualSpace/overview_image.jpg" alt="enviornment design of fishing port">
-</div>
-
-</div>
-</section>
-
-<!-- ===== ANIMATION ===== -->
-<section id="animation" class="section alt">
-<h2>Animation</h2>
-
-<div class="grid">
-
-<div class="card" onclick="openModal(
-'Lip Sync Practice',
-'To better understand the importance of emotion in animation, I filmed my own reference video going along with a line from Disney\'s Emperor\'s New Groove. With that reference, I created an animation focused on facial expressions and lip syncing movements.',
-['https://www.youtube.com/embed/UHr7Ilf0d8k?si=fmYLZtWUlgf_z-xu'],
-'Intro to 3D Animation',
-['./img/logos/autodesk-maya-icon.webp', './img/logos/nuke.jpg']
-)">
-    <iframe 
-        src="https://www.youtube.com/embed/UHr7Ilf0d8k"
-        frameborder="0"
-        allowfullscreen>
-    </iframe>
-</div>
-
-<div class="card" onclick="openModal(
-'Foxtail Short',
-'My first 3D animation project focused on understanding the basics of movement, timing, and first & secondary motion.',
-['https://www.youtube.com/embed/w9Q57JE0Bqw?si=NlFaP3gqCdtYFCst'],
-'Intro to 3D Animation',
-['./img/logos/autodesk-maya-icon.webp']
-)">
-    <iframe 
-        src="https://www.youtube.com/embed/w9Q57JE0Bqw?si=NlFaP3gqCdtYFCst"
-        frameborder="0"
-        allowfullscreen>
-    </iframe>
-</div>
-
-</div>
-</section>
-
-<section id="games" class="section">
-<h2>Game Development</h2>
-
-<div class="grid">
-
-<div class="card" onclick="openModal(
-'FPS Design - The Factory Prototype',
-'For this project, we created an FPS template from scratch. I used that template in order to create an immersive experience for Halloween using the Unreal provided assets.',
-['https://www.youtube.com/embed/w0mLZMao0-w'],
-'Intro to Unreal Course',
-['./img/logos/unreal.webp']
-)">
-    <iframe 
-        src="https://www.youtube.com/embed/w0mLZMao0-w"
-        frameborder="0"
-        allowfullscreen>
-    </iframe>
-</div>
-
-<div class="card" onclick="openModal(
-'Mouse Clicker Puzzle Prototype',
-'To better understand mouse and cursor game interactions, our goal was to create a puzzle game using the mouse-clicker template we created from scratch. We also used this project to understand the basics of using and utalizing an animation tree. Textures were imported from Fab and animations and the character model were imported from Mixamo.',
-['https://www.youtube.com/embed/AKsFfHYbukY'],
-'Intro to Unreal Course',
-['./img/logos/unreal.webp']
-)">
-    <iframe 
-        src="https://www.youtube.com/embed/AKsFfHYbukY"
-        frameborder="0"
-        allowfullscreen>
-    </iframe>
-</div>
-
-<div class="card" onclick="openModal(
-'Beyond the Light Prototype',
-'For our final project, I created a prototype for a platformer-puzzle game called Beyond the Light with the main mechanic being that the player is able to use their shadow to solve puzzles and explore the area. I fully programmed the mechanics and modeled the character in Autodesk Maya. I am currently using this prototype as a base now for a personal project and continuing development of the game.',
-['https://www.youtube.com/embed/jKFuuUzCans'],
-'Intro to Unreal Course',
-['./img/logos/unreal.webp', './img/logos/autodesk-maya-icon.webp']
-)">
-    <iframe 
-        src="https://www.youtube.com/embed/jKFuuUzCans"
-        frameborder="0"
-        allowfullscreen>
-    </iframe>
-</div>
-
-</div>
-</section>
-
-<section id="design" class="section alt">
-<h2>Graphic Design</h2>
-
-<div class="grid">
-
-<div class="card" onclick="openModal(
-'Color Systems Storybook',
-'add description',
-['./img/graphic design/colorsystemsall.png']
-)">
-<img src="./img/graphic design/colorsystemsall.png" alt="storybook color designs">
-</div>
-
-<div class="card" onclick="openModal(
-'Color Schemes',
-'add description',
-['./img/graphic design/ColorSchemesAll.png']
-)">
-<img src="./img/graphic design/ColorSchemesAll.png" alt="color scheme drink designs">
-</div>
-
-<div class="card" onclick="openModal(
-'Minamalist Self Portrait',
-'add description',
-['./img/graphic design/1776527387695-d33e002f-4a03-4c06-b653-42dc64a9b167_1.jpg']
-)">
-<img src="./img/graphic design/1776527387695-d33e002f-4a03-4c06-b653-42dc64a9b167_1.jpg" alt="illustrator portrait">
-</div>
-
-</div>
-</section>
-
-<section id="web" class="section alt">
-<h2>Website Design</h2>
-
-<div class="grid">
-
-<a href="https://mblumpkin.github.io/madi-project-one/" target="_blank" class="card web-card">
-    <img src="./img/web/honeybeesite.png" alt="Screenshot of bee website homepage">
-    
-    <div class="card-info">
-        <h3>Find Your Honey Bee</h3>
-        <p>kedfnalejkrvWUKE/p>
-    </div>
-</a>
-
-<a href="https://mblumpkin.github.io/madi-project-two/" target="_blank" class="card web-card">
-    <img src="./img/web/beyondthelightsite.png" alt="Screenshot of beyond the light website homepage">
-    
-    <div class="card-info">
-        <h3>The Light Between</h3>
-        <p>k:sDVNK;ADFNADIFBJAIEODFBJ</p>
-    </div>
-</a>
-
-<a href="https://mblumpkin.github.io/madi-project-3/" target="_blank" class="card web-card">
-    <img src="./img/web/sandart.png" alt="Screenshot of sand website homepage">
-    
-    <div class="card-info">
-        <h3>Beach Sand Art</h3>
-        <p>KWUEHFULIDFHWRHBFUIDGFBH</p>
-    </div>
-</a>
-
-</div>
-</div>
-</section>
-
-<footer id="contact" class="footer">
-<h2>Contact</h2>
-
-<div class="contact-icons">
-
-<a href="mailto:mblumpkin2@gmail.com" target="_blank">
-<img src="./img/logos/email-icon-614x460.png" alt="Email">
-</a>
-
-<a href="https://instagram.com/justmadi.b" target="_blank">
-<img src="./img/logos/instagram-logo-instagram-logo-transparent-instagram-icon-transparent-free-free-png.webp" alt="Instagram">
-</a>
-
-<a href="https://linkedin.com/in/madison-lumpkin-352907347" target="_blank">
-<img src="./img/logos/logo-linkedin-icon-sm.png" alt="LinkedIn">
-</a>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Open navigation menu">☰</button>
+
+    <nav class="nav-pill" id="navMenu">
+        <a href="#about">About</a>
+        <a href="#concept">Concept</a>
+        <a href="#traditional">Traditional</a>
+        <a href="#3d">3D</a>
+        <a href="#animation">Animation</a>
+        <a href="#games">Games</a>
+        <a href="#design">Design</a>
+        <a href="#web">Web</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="spiral"></div>
+
+    <header class="hero">
+        <h1>Madison Lumpkin</h1>
+        <p>Art & Design Student at Louisiana State University</p>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+
+        <div class="about-content">
+            <div class="about-image">
+                <img src="./img/profile.jpeg" alt="Madison Lumpkin">
+            </div>
+
+            <div class="about-text">
+                <p>
+                    I am a student at Louisiana State University in Baton Rouge, currently pursuing a BA in Arts & Design and an MS in Digital Media Arts & Engineering. 
+                    With a foundation in traditional painting and drawing, my practice has evolved into a deep interest in 3D art and digital creation. 
+                    I am particularly drawn to the process of building experiences through 3D animation, modeling, rendering, programming, and texturing.
+                </p>
+
+                <p>
+                    I absolutely love learning new processes, software, and artistic mediums. 
+                    Outside of my work, I’m a tennis player and coach, a cook, a jewelry maker, and an avid reader, among many other interests.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOFTWARE -->
+    <section class="software">
+        <h3>Software</h3>
+
+        <div class="software-grid">
+            <div class="soft"><img src="./img/logos/autodesk-maya-icon.webp" alt="Autodesk Maya icon"></div>
+            <div class="soft"><img src="./img/logos/Procreate-Logo.png" alt="Procreate icon"></div>
+            <div class="soft"><img src="./img/logos/unreal.webp" alt="Unreal Engine icon"></div>
+            <div class="soft"><img src="./img/logos/illustrator.png" alt="Adobe Illustrator icon"></div>
+            <div class="soft"><img src="./img/logos/Adobe_Photoshop_CC_icon.svg.png" alt="Adobe Photoshop icon"></div>
+            <div class="soft"><img src="./img/logos/github-icon-2.svg" alt="GitHub icon"></div>
+            <div class="soft"><img src="./img/logos/Visual_Studio_Code_1.35_icon.svg.png" alt="Visual Studio Code icon"></div>
+            <div class="soft"><img src="./img/logos/nuke.jpg" alt="Nuke icon"></div>
+            <div class="soft"><img src="./img/logos/spine_badge.png" alt="Spine 2D icon"></div>
+            <div class="soft"><img src="./img/logos/Godot_icon.svg.png" alt="Godot icon"></div>
+            <div class="soft"><img src="./img/logos/arnold.webp" alt="Arnold renderer icon"></div>
+        </div>
+    </section>
+
+    <!-- LANGUAGES -->
+    <section class="languages">
+        <h3>Coding Languages</h3>
+
+        <div class="languages-grid">
+            <div class="lang"><img src="./img/logos/ISO_C++_Logo.svg.png" alt="C++ icon"></div>
+            <div class="lang"><img src="./img/logos/Python-logo-notext.svg.png" alt="Python icon"></div>
+            <div class="lang"><img src="./img/logos/javascript-logo-javascript-icon-transparent-free-png.webp" alt="JavaScript icon"></div>
+            <div class="lang"><img src="./img/logos/CSS3_logo_and_wordmark.svg.png" alt="CSS icon"></div>
+        </div>
+    </section>
+
+    <!-- CONCEPT -->
+    <section id="concept" class="section">
+        <h2>Digital Illustration & Concept Art</h2>
+
+        <div class="grid">
+
+            <div class="card" onclick="openModal(
+                'The Light Between Game Concept Art',
+                'For my Intro to Unreal class, I started a prototype for a light and shadow themed game. After the class, I took it on as a personal project and have been creating concept art to figure out the style, color palette, environment, and overall visual direction.',
+                ['./img/illustrations/LightBeanConceptArt.png'],
+                'Personal Project',
+                ['./img/logos/Procreate-Logo.png','./img/logos/Adobe_Photoshop_CC_icon.svg.png']
+            )">
+                <img src="./img/illustrations/LightBeanConceptArt.png" alt="Concept art for The Light Between game">
+            </div>
+
+            <div class="card" onclick="openModal(
+                'Kingfisher Dock',
+                'As I got more into creating concept art, I found myself especially drawn to working from color palettes. For this illustration, I developed the palette first, using it to guide the scene, mood, and overall visual direction.',
+                ['./img/illustrations/Kingfisher.PNG'],
+                'Personal Project',
+                ['./img/logos/Procreate-Logo.png','./img/logos/Adobe_Photoshop_CC_icon.svg.png']
+            )">
+                <img src="./img/illustrations/Kingfisher.PNG" alt="Kingfisher on a dock illustration">
+            </div>
+
+            <div class="card" onclick="openModal(
+                'Mourice Character Concept Art',
+                'A character design I created when considering a more sketchy style than I usually go for. I wanted to play around with how the shape and coloring of an animal can be reflected in a human design.',
+                ['./img/illustrations/mourice.png'],
+                'Personal Project',
+                ['./img/logos/Procreate-Logo.png']
+            )">
+                <img src="./img/illustrations/mourice.png" alt="Character design concept art">
+            </div>
+
+            <div class="card" onclick="openModal(
+                'Madi Bee Icon',
+                'A profile icon I designed for my art and jewelry branding under the name of Madi Bee.',
+                ['./img/illustrations/MadiBee.png'],
+                'Profile Design',
+                ['./img/logos/Procreate-Logo.png']
+            )">
+                <img src="./img/illustrations/MadiBee.png" alt="Madi Bee icon design">
+            </div>
+
+            <div class="card" onclick="openModal(
+                'X-Emplar, School of Heroes - Female Main Character Customization Example',
+                'As part of my assistantship with Pennington Biomedical and the LSU DMAE Center, one of my tasks was to create the main character designs as well as examples of the possible character customizations. This is an example of the main super female character and how she can be customized. The project is to create a game that encourages preteens to be healthy, mindful, and active through a fun and engaging superhero storyline.',
+                ['./img/illustrations/FemaleMain.png', './img/illustrations/FemalePossibleDesigns.jpeg'],
+                'Game Dev Assistantship Work',
+                ['./img/logos/Procreate-Logo.png']
+            )">
+                <img src="./img/illustrations/FemaleMain.png" alt="Female main character example for game">
+            </div>
+
+            <div class="card" onclick="openModal(
+                'X-Emplar, School of Heroes - Male Main Character Customization Example',
+                'As part of my assistantship with Pennington Biomedical and the LSU DMAE Center, one of my tasks was to create the main character designs as well as examples of the possible character customizations. This is an example of the main super male character and how he can be customized. The project is to create a game that encourages preteens to be healthy, mindful, and active through a fun and engaging superhero storyline.',
+                ['./img/illustrations/MaleMain.png'],
+                'Game Dev Assistantship Work',
+                ['./img/logos/Procreate-Logo.png']
+            )">
+                <img src="./img/illustrations/MaleMain.png" alt="Male main character example for game">
+            </div>
+
+            <div class="card" onclick="openModal(
+                'Cypress Corporation Book Cover',
+                'I was commissioned by a new author to create the artwork for her book cover. The story follows a young girl surviving and exploring an apocalyptic world with a sense of hope, and I wanted to reflect her emotional state — loneliness and isolation — through the composition. A dying cypress tree serves as the central visual element beside the main character, emphasizing that sense of solitude within the environment.',
+                ['./img/illustrations/CypressCorpCover.png', './img/illustrations/FullCoverCypress.png'],
+                'Freelance Commission - Book Cover Design',
+                ['./img/logos/Procreate-Logo.png', './img/logos/Adobe_Photoshop_CC_icon.svg.png', './img/logos/illustrator.png']
+            )">
+                <img src="./img/illustrations/CypressCorpCover.png" alt="Cypress Corporation book cover design">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TRADITIONAL -->
+    <section id="traditional" class="section alt">
+        <h2>Traditional Art</h2>
+
+        <div class="grid">
+
+            <div class="card" onclick="openModal('Coastal Turtle','2023, Acrylic Painting on Canvas, Commission', ['./img/traditional/Turtle.jpeg'])">
+                <img src="./img/traditional/Turtle.jpeg" alt="Turtle on a coast painting">
+            </div>
+
+            <div class="card" onclick="openModal('Ragdoll Kitten','2026, Gouache Painting on Watercolor Paper, Personal', ['./img/traditional/RagdollKitty.jpeg'])">
+                <img src="./img/traditional/RagdollKitty.jpeg" alt="Ragdoll kitten painting">
+            </div>
+
+            <div class="card" onclick="openModal('Lost and Found to Nature','2025, Acrylic Painting on Canvas, Personal', ['./img/traditional/Manatees.jpeg'])">
+                <img src="./img/traditional/Manatees.jpeg" alt="Lone boat drifting in nature painting">
+            </div>
+
+            <div class="card" onclick="openModal('Signs of Growth','2026, Acrylic Painting on Canvas, Personal', ['./img/traditional/Flowers.jpeg'])">
+                <img src="./img/traditional/Flowers.jpeg" alt="Blue flowers over portrait painting">
+            </div>
+
+            <div class="card" onclick="openModal('Beach Scene','2025, Acrylic Painting on Canvas, Personal', ['./img/traditional/Beach.jpeg'])">
+                <img src="./img/traditional/Beach.jpeg" alt="Beach scene painting">
+            </div>
+
+            <div class="card" onclick="openModal('Bridal Party','2025, Acrylic Painting on Canvas, Uncanny Gallery for LSU', ['./img/traditional/BridalPartyPainting.PNG'])">
+                <img src="./img/traditional/BridalPartyPainting.PNG" alt="Bride in front of mirror and candles painting">
+            </div>
+
+            <div class="card" onclick="openModal('Jazzland','2024, Acrylic Painting on Canvas, Commission', ['./img/traditional/Jazzland.jpg'])">
+                <img src="./img/traditional/Jazzland.jpg" alt="Whimsical New Orleans painting">
+            </div>
+
+            <div class="card" onclick="openModal('Glass, Wood, & Metal','2024, Lead Pencil on Paper, Drawing Composition Course Project', ['./img/traditional/DRAWING COMP. - Glass, Wood, Metal.jpeg'])">
+                <img src="./img/traditional/DRAWING COMP. - Glass, Wood, Metal.jpeg" alt="Glass, wood, and metal still life drawing">
+            </div>
+
+            <div class="card" onclick="openModal('Texture Still Life','2024, Lead Pencil on Paper, Drawing Composition Course Project', ['./img/traditional/DRAWING COMP. - Texture Still Life.jpeg'])">
+                <img src="./img/traditional/DRAWING COMP. - Texture Still Life.jpeg" alt="Texture still life drawing">
+            </div>
+
+            <div class="card" onclick="openModal('Transformation','2024, Charcoal & Colored Pencil on Paper, Drawing Composition Project', ['./img/traditional/DRAWING COMP. - Transformation.jpeg'])">
+                <img src="./img/traditional/DRAWING COMP. - Transformation.jpeg" alt="Charcoal drawing about industrial transformation">
+            </div>
+
+            <div class="card" onclick="openModal('Bone Still Life','2024, Charcoal on Paper, Drawing Composition Project', ['./img/traditional/IMG_6783.jpg'])">
+                <img src="./img/traditional/IMG_6783.jpg" alt="Bone charcoal still life">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 3D -->
+    <section id="3d" class="section">
+        <h2>3D Modeling & Rendering</h2>
+
+        <div class="grid">
+
+            <div class="card" onclick="openModal(
+                'Isometric Room - Abandoned Writer Room',
+                'This project was an isometric room design inspired by the concept of a writing room that had been left behind by a fleeing author. Around the room, there are photos of his own inspiration as well as the last piece he ever wrote. This project got me really immersed in creating a story through details.',
+                ['./img/virtualSpace/ML_Isometric_View.jpg', './img/virtualSpace/ML_Bookshelf_View.jpg', './img/virtualSpace/ML_Ground_View.jpg', './img/virtualSpace/ML_Desk_View.jpg', './img/virtualSpace/ML_Typewriter_View.jpg'],
+                'Virtual Space Course',
+                ['./img/logos/autodesk-maya-icon.webp', './img/logos/Adobe_Photoshop_CC_icon.svg.png', './img/logos/arnold.webp']
+            )">
+                <img src="./img/virtualSpace/ML_Isometric_View.jpg" alt="Abandoned writer isometric room">
+            </div>
+
+            <div class="card" onclick="openModal(
+                'Environmental Design - Foggy Fishing Port',
+                'This project was my first attempt at environmental modeling in Maya for my Virtual Space course at LSU. I aimed to create a small fishing town with a foggy, mysterious atmosphere.',
+                ['./img/virtualSpace/overview_image.jpg', './img/virtualSpace/main_shop_image.jpg', './img/virtualSpace/boat_image.jpg', './img/virtualSpace/right_hut_image.jpg', './img/virtualSpace/IslandSketch.jpeg', './img/virtualSpace/BoatSketch.jpeg'],
+                'Virtual Space Course',
+                ['./img/logos/autodesk-maya-icon.webp','./img/logos/arnold.webp']
+            )">
+                <img src="./img/virtualSpace/overview_image.jpg" alt="Environmental design of fishing port">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ANIMATION -->
+    <section id="animation" class="section alt">
+        <h2>Animation</h2>
+
+        <div class="grid">
+
+            <div class="card" onclick="openModal(
+                'Lip Sync Practice',
+                'To better understand the importance of emotion in animation, I filmed my own reference video going along with a line from Disney\'s Emperor\'s New Groove. With that reference, I created an animation focused on facial expressions and lip syncing movements.',
+                ['https://www.youtube.com/embed/UHr7Ilf0d8k?si=fmYLZtWUlgf_z-xu'],
+                'Intro to 3D Animation',
+                ['./img/logos/autodesk-maya-icon.webp', './img/logos/nuke.jpg']
+            )">
+                <iframe src="https://www.youtube.com/embed/UHr7Ilf0d8k" allowfullscreen></iframe>
+            </div>
+
+            <div class="card" onclick="openModal(
+                'Foxtail Short',
+                'My first 3D animation project focused on understanding the basics of movement, timing, squash and stretch, and primary and secondary motion.',
+                ['https://www.youtube.com/embed/wtKNF4VRl_8'],
+                'Intro to 3D Animation',
+                ['./img/logos/autodesk-maya-icon.webp']
+            )">
+                <iframe src="https://www.youtube.com/embed/wtKNF4VRl_8" allowfullscreen></iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- GAMES -->
+    <section id="games" class="section">
+        <h2>Game Development</h2>
+
+        <div class="grid">
+
+            <div class="card" onclick="openModal(
+                'FPS Design - The Factory Prototype',
+                'For this project, we created an FPS template from scratch. I used that template in order to create an immersive experience for Halloween using the Unreal provided assets.',
+                ['https://www.youtube.com/embed/w0mLZMao0-w'],
+                'Intro to Unreal Course',
+                ['./img/logos/unreal.webp']
+            )">
+                <iframe src="https://www.youtube.com/embed/w0mLZMao0-w" allowfullscreen></iframe>
+            </div>
+
+            <div class="card" onclick="openModal(
+                'Mouse Clicker Puzzle Prototype',
+                'To better understand mouse and cursor game interactions, our goal was to create a puzzle game using the mouse-clicker template we created from scratch. We also used this project to understand the basics of using and utilizing an animation tree. Textures were imported from Fab, and animations and the character model were imported from Mixamo.',
+                ['https://www.youtube.com/embed/AKsFfHYbukY'],
+                'Intro to Unreal Course',
+                ['./img/logos/unreal.webp']
+            )">
+                <iframe src="https://www.youtube.com/embed/AKsFfHYbukY" allowfullscreen></iframe>
+            </div>
+
+            <div class="card" onclick="openModal(
+                'The Light Between Prototype',
+                'For our final project, I created a prototype for a platformer-puzzle game called The Light Between with the main mechanic being that the player is able to use their shadow to solve puzzles and explore the area. I fully programmed the mechanics and modeled the character in Autodesk Maya. I am currently using this prototype as a base for a personal project and continuing development of the game.',
+                ['https://www.youtube.com/embed/jKFuuUzCans'],
+                'Intro to Unreal Course',
+                ['./img/logos/unreal.webp', './img/logos/autodesk-maya-icon.webp']
+            )">
+                <iframe src="https://www.youtube.com/embed/jKFuuUzCans" allowfullscreen></iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- DESIGN -->
+    <section id="design" class="section alt">
+        <h2>Graphic Design</h2>
+
+        <div class="grid">
+
+            <div class="card" onclick="openModal(
+                'Color Systems Storybook',
+                'Using a limited color palette, my goal for this project was to create a series of children\'s book covers that felt cohesive in composition, style, and palette.',
+                ['./img/graphic design/colorsystemsall.png', './img/graphic design/pelican.png', './img/graphic design/penguin.png', './img/graphic design/flamingo.png', './img/graphic design/sanderling.png', './img/graphic design/pelicanmockup.png'],
+                'Color Design Course',
+                ['./img/logos/Procreate-Logo.png', './img/logos/illustrator.png']
+            )">
+                <img src="./img/graphic design/colorsystemsall.png" alt="Storybook color designs">
+            </div>
+
+            <div class="card" onclick="openModal(
+                'Color Schemes',
+                'With the theme of drinks, each of these compositions reflects a type of color scheme such as analogous, complementary, triadic, and more.',
+                ['./img/graphic design/ColorSchemesAll.png'],
+                'Color Design Course',
+                ['./img/logos/illustrator.png']
+            )">
+                <img src="./img/graphic design/ColorSchemesAll.png" alt="Color scheme drink designs">
+            </div>
+
+            <div class="card" onclick="openModal(
+                'Minimalist Self Portrait',
+                'An introductory project to better understand how to utilize the tools of Illustrator.',
+                ['./img/graphic design/1776527387695-d33e002f-4a03-4c06-b653-42dc64a9b167_1.jpg'],
+                'Digital Art 1',
+                ['./img/logos/illustrator.png']
+            )">
+                <img src="./img/graphic design/1776527387695-d33e002f-4a03-4c06-b653-42dc64a9b167_1.jpg" alt="Minimalist self portrait">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- WEB -->
+    <section id="web" class="section">
+        <h2>Website Design</h2>
+
+        <div class="grid">
+
+            <a href="https://mblumpkin.github.io/madi-project-one/" target="_blank" class="card web-card">
+                <img src="./img/web/honeybeesite.png" alt="Screenshot of bee website homepage">
+                <div class="card-info">
+                    <h3>Find Your Honey Bee</h3>
+                    <p>A Web Design Course project aimed to learn basic CSS styling in a fun, interactive way.</p>
+                </div>
+            </a>
+
+            <a href="https://mblumpkin.github.io/madi-project-two/" target="_blank" class="card web-card">
+                <img src="./img/web/beyondthelightsite.png" alt="Screenshot of The Light Between website homepage">
+                <div class="card-info">
+                    <h3>The Light Between</h3>
+                    <p>A faux site that acts as a sign-up page for The Light Between updates and community membership.</p>
+                </div>
+            </a>
+
+            <a href="https://mblumpkin.github.io/madi-project-3/" target="_blank" class="card web-card">
+                <img src="./img/web/sandart.png" alt="Screenshot of sand website homepage">
+                <div class="card-info">
+                    <h3>Beach Sand Art</h3>
+                    <p>A calming and interactive site that serves more as a simple visual experience than a traditional website.</p>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <footer id="contact" class="footer">
+        <h2>Contact</h2>
+
+        <div class="contact-icons">
+            <a href="mailto:mblumpkin2@gmail.com" target="_blank">
+                <img src="./img/logos/email-icon-614x460.png" alt="Email">
+            </a>
+
+            <a href="https://instagram.com/justmadi.b" target="_blank">
+                <img src="./img/logos/instagram-logo-instagram-logo-transparent-instagram-icon-transparent-free-free-png.webp" alt="Instagram">
+            </a>
+
+            <a href="https://linkedin.com/in/madison-lumpkin-352907347" target="_blank">
+                <img src="./img/logos/logo-linkedin-icon-sm.png" alt="LinkedIn">
+            </a>
+        </div>
+
+        <p class="copyright">© 2026 Madison Lumpkin</p>
+    </footer>
 
 </div>
 
-<p class="copyright">© 2026 Madison Lumpkin</p>
-</footer>
-
-<!-- ===== MODAL ===== -->
+<!-- MODAL -->
 <div id="modal" class="modal" onclick="closeModal()">
+    <div class="modal-content" onclick="event.stopPropagation()">
 
-<div class="modal-content" onclick="event.stopPropagation()">
+        <button class="close" onclick="closeModal()" aria-label="Close modal">×</button>
 
-<span class="close" onclick="closeModal()">×</span>
+        <div class="carousel">
+            <button class="arrow left" onclick="prevSlide()">‹</button>
+            <div id="carouselTrack"></div>
+            <button class="arrow right" onclick="nextSlide()">›</button>
+        </div>
 
-<div class="carousel">
-<button class="arrow left" onclick="prevSlide()">‹</button>
-<div id="carouselTrack"></div>
-<button class="arrow right" onclick="nextSlide()">›</button>
-</div>
+        <div class="modal-meta">
+            <h3 id="modalTitle"></h3>
+            <p id="modalClass"></p>
+        </div>
 
-<div class="modal-meta">
-<h3 id="modalTitle"></h3>
-<p id="modalClass"></p>
-</div>
+        <p id="modalText"></p>
 
-<p id="modalText"></p>
+        <div id="modalSoftwares" class="modal-softwares"></div>
 
-<div id="modalSoftwares" class="modal-softwares"></div>
-
-</div>
+    </div>
 </div>
 
 <script src="./js/main.js"></script>
