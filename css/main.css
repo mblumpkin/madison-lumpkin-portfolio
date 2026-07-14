@@ -681,3 +681,39 @@ grid-template-columns:1fr 1fr;
 }
 
 }
+
+@media (max-width:768px){
+
+    .software,
+    .languages{
+        width:90%;
+        padding:28px 16px;
+    }
+
+    .software-grid,
+    .languages-grid{
+        display:grid;
+        grid-template-columns:repeat(3, minmax(0, 1fr));
+        gap:18px 12px;
+        justify-items:center;
+        align-items:center;
+    }
+
+    .soft,
+    .lang{
+        width:100%;
+        min-height:85px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .soft img,
+    .lang img{
+        width:64px;
+        height:64px;
+        padding:0;
+        object-fit:contain;
+        display:block;
+    }
+}
