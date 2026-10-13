@@ -29,21 +29,15 @@ const softwareIcons = {
 /* =========================================
    02. PROJECT DATA
 
-   To add a new project:
-   1. Copy an existing project object.
-   2. Change its title and description.
-   3. Add its images or video.
-   4. Set the correct category.
-   5. Save and refresh!
-
    Categories:
    animation
    modeling
    games
    concept
-   design
+   graphic design
    traditional
    web
+   digital humans
 ========================================= */
 
 const projects = [
@@ -612,7 +606,7 @@ const projects = [
         link:
             "https://mblumpkin.github.io/madi-project-one/",
 
-        software: ["vscode"]
+        software: ["vscode", "github"]
     },
 
     {
@@ -631,7 +625,7 @@ const projects = [
         link:
             "https://mblumpkin.github.io/madi-project-two/",
 
-        software: ["vscode"]
+        software: ["vscode", "github"]
     },
 
     {
@@ -650,7 +644,7 @@ const projects = [
         link:
             "https://mblumpkin.github.io/madi-project-3/",
 
-        software: ["vscode"]
+        software: ["vscode", "github"]
     },
 
     {
@@ -669,8 +663,29 @@ const projects = [
         link:
             "https://mblumpkin.github.io/grantpentonportfolio/",
 
-        software: ["vscode"]
-    }
+        software: ["vscode", "github"]
+    },
+
+    /* =====================================
+       DIGITAL HUMANS
+    ====================================== */
+
+    {
+        title: "Roller Coaster",
+        category: "digitalhumans",
+        type: "Human Response · Theme Park Design",
+        context: "Digital Humans Course",
+
+        description:
+            "To better understand the reactions of the human body to different levels of G-Force, I was tasked with designing and testing a roller coaster to alter in response to whiplash, risks, intensity, etc. This coaster when through multiple trials to reach its end product.",
+
+        media: [
+            ""
+        ],
+
+        software: ["unreal"]
+
+    },
 
 ];
 
@@ -686,7 +701,8 @@ const gridContainers = {
     concept: "concept-grid",
     design: "design-grid",
     traditional: "traditional-grid",
-    web: "web-grid"
+    web: "web-grid",
+    digitalhumans: "digitalhuman-grid"
 };
 
 
