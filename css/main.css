@@ -2107,3 +2107,104 @@
             }
         }
 
+        
+/* =========================================
+   SECTION HEADINGS — SMALLER & BALANCED
+========================================= */
+
+/* Main section titles:
+   Animation, 3D Modeling, Games, etc. */
+
+.section-heading h2 {
+    margin: 0 0 16px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(30px, 3vw, 40px);
+    font-weight: 500;
+
+    line-height: 1.2;
+    letter-spacing: -.02em;
+}
+
+/* Descriptions underneath section titles */
+
+.section-intro {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+/* Small section numbers, if present */
+
+.section-number {
+    font-size: 11px;
+    margin-bottom: 12px;
+}
+
+/* Reduce empty space between heading and cards */
+
+.section-heading {
+    margin-bottom: 40px;
+}
+
+/* Slightly reduce overall section spacing */
+
+.section {
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+    .section-heading h2 {
+        font-size: 36px;
+    }
+
+    .section-intro {
+        font-size: 14px;
+    }
+
+    .section-heading {
+        margin-bottom: 32px;
+    }
+
+    .section {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 480px) {
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .section-intro {
+        font-size: 13px;
+    }
+
+    .section-heading {
+        margin-bottom: 28px;
+    }
+
+    .section {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+}
+
