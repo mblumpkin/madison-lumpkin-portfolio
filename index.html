@@ -1,195 +1,152 @@
 
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Madison Lumpkin | Digital Artist & Animator</title>
+        <title>Madison Lumpkin | Technical Artist & Creative Technologist</title>
 
-    <meta
-        name="description"
-        content="Portfolio of Madison Lumpkin, a digital artist specializing in animation, 3D modeling, game development, illustration, and design."
-    >
+        <meta name="description"
+            content="Portfolio of Madison Lumpkin: animation, 3D modeling, game development, illustration, and design.">
 
-    <!-- Favicon -->
-    <link
-        rel="icon"
-        type="image/png"
-        href="./img/faviconM.png"
-    >
+        <link rel="icon" type="image/png" href="./img/faviconM.png">
 
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet"
-    >
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        >
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
 
-</head>
-
-<body>
-
-    <!-- =====================================
-         BACKGROUND TEXTURE
-    ====================================== -->
-
-    <div class="grain" aria-hidden="true"></div>
-
-
-    <!-- =====================================
-         MAIN PAPER CONTAINER
-    ====================================== -->
+    <body>
 
     <div class="paper" id="top">
-
-
+        
         <!-- =====================================
-             STICKY HEADER / NAVIGATION
-        ====================================== -->
+            HEADER
+        ===================================== -->
 
-        <div class="site-header">
+        <header class="site-header">
 
-            <!-- Portfolio Branding -->
-            <a href="#top" class="site-brand">
+            <div class="header-top">
 
-                <span class="brand-mark">
-                    ML.
-                </span>
-
-                <span class="brand-text">
-
-                    <strong>
-                        Madison Lumpkin
-                    </strong>
-
-                    <small>
-                        Digital Artist & Animator
-                    </small>
-
-                </span>
-
-            </a>
-
-
-            <!-- Mobile Menu Button -->
-            <button
-                class="hamburger"
-                type="button"
-                onclick="toggleMenu()"
-                aria-label="Toggle navigation"
-                aria-controls="navMenu"
-                aria-expanded="false"
-            >
-                ☰
-            </button>
-
-
-            <!-- Navigation Links -->
-            <nav class="nav-pill" id="navMenu">
-
-                <a href="#about">
-                    About
+                <a href="#demo" class="site-brand">
+                    Madison Lumpkin
                 </a>
 
-                <a href="#demo">
-                    Demo Reel
-                </a>
+                <div class="header-subtitle">
+                    Technical Artist & Creative Technologist
+                </div>
 
-                <a href="#animation">
-                    Animation
-                </a>
-
-                <a href="#3d">
-                    3D
-                </a>
-
-                <a href="#games">
-                    Games
-                </a>
-
-                <a href="#concept">
-                    Illustration
-                </a>
-
-                <a href="#design">
-                    Graphic Design
-                </a>
-
-                <a href="#traditional">
-                    Traditional
-                </a>
-
-                <a href="#websites">
-                    Websites
-                </a>
-
-                <a href="#digitalhumans">
-                    Digital Humans
-                </a>
-
-                <a href="#contact" class="nav-contact">
-                    Contact Me
-                </a>
-
-            </nav>
-
-        </div>
-
-
-        <!-- =====================================
-             SPIRAL PAPER DECORATION
-        ====================================== -->
-
-        <div class="spiral" aria-hidden="true"></div>
-
-
-        <!-- =====================================
-             HERO SECTION
-        ====================================== -->
-
-        <header class="hero">
-
-            <div class="hero-content">
-
-                <p class="hero-eyebrow">
-                    ARTIST PORTFOLIO / 2026
-                </p>
-
-                <h1>
-                    Madison
-                    <span>Lumpkin.</span>
-                </h1>
-
-                <p class="hero-subtitle">
-                    Digital Artist · Animator · Creative Developer
-                </p>
-
-                <p class="hero-description">
-                    Bringing ideas to life through animation,
-                    3D environments, interactive experiences,
-                    and visual storytelling.
-                </p>
-
-                <a href="#animation" class="hero-button">
-                    Explore My Work ↗
-                </a>
-
-            </div>
-
-            <div class="hero-scroll">
-                <span>SCROLL TO EXPLORE</span>
-                <span>↓</span>
             </div>
 
         </header>
 
 
         <!-- =====================================
-             ABOUT ME
+            STICKY NAVIGATION
+        ===================================== -->
+
+        <div class="sticky-nav-wrapper">
+
+            <div class="sticky-nav-inner">
+
+                <button
+                    class="hamburger"
+                    type="button"
+                    onclick="toggleMenu()"
+                    aria-label="Toggle navigation"
+                    aria-controls="navMenu"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+                <nav
+                    class="nav-pill"
+                    id="navMenu"
+                    aria-label="Main navigation"
+                >
+
+                    <a href="#demo">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#animation">Animation</a>
+                    <a href="#3d">3D</a>
+                    <a href="#games">Games</a>
+                    <a href="#concept">Illustration</a>
+                    <a href="#design">Graphic Design</a>
+                    <a href="#traditional">Traditional</a>
+                    <a href="#websites">Websites</a>
+                    <a href="#digitalhumans">Digital Humans</a>
+                    <a href="#contact">Contact</a>
+
+                </nav>
+
+            </div>
+
+        </div>
+
+
+
+       
+            <!-- =====================================
+                DEMO REEL — COMING SOON
+            ===================================== -->
+
+            <section class="reel-landing" id="demo">
+
+                <div class="reel-container reel-coming-soon">
+
+                    <div class="reel-placeholder">
+
+                        <div class="reel-placeholder-inner">
+
+                            <span class="reel-eyebrow">
+                                MADISON LUMPKIN — 2026
+                            </span>
+
+                            <div class="reel-icon">
+                                ✦
+                            </div>
+
+                            <h1>
+                                Demo Reel
+                                <span>Coming Soon</span>
+                            </h1>
+
+                            <div class="reel-divider"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="reel-caption">
+
+                    <div>
+                        <strong>DEMO REEL / IN PROGRESS</strong>
+
+                        <span>
+                            Animation · 3D Art · Game Development
+                        </span>
+                    </div>
+
+                    <a href="#about">
+                        See My Projects ↓
+                    </a>
+
+                </div>
+
+            </section>
+
+
+
+        <!-- =====================================
+            ABOUT
         ====================================== -->
 
         <section id="about" class="about">
@@ -197,13 +154,12 @@
             <div class="section-heading">
 
                 <span class="section-number">
-                    00 / ABOUT
+                    01 / ABOUT
                 </span>
 
                 <h2>A Little About Me...</h2>
 
             </div>
-
 
             <div class="about-content">
 
@@ -217,7 +173,6 @@
 
                 </div>
 
-
                 <div class="about-text">
 
                     <p>
@@ -230,8 +185,7 @@
                     <p>
                         With a foundation in traditional painting
                         and drawing, my practice has evolved into
-                        a deep interest in 3D art and digital
-                        creation.
+                        a deep interest in 3D art and digital creation.
                     </p>
 
                     <p>
@@ -244,12 +198,11 @@
                     </p>
 
                     <p>
-                        I'm always excited to explore new
-                        software, creative processes, and
-                        artistic mediums. Outside of my work,
-                        I'm a tennis player and coach, a cook,
-                        a jewelry maker, a hockey fan, and 
-                        an avid reader.
+                        I'm always excited to explore new software,
+                        creative processes, and artistic mediums.
+                        Outside of my work, I'm a tennis player
+                        and coach, a cook, a jewelry maker,
+                        a hockey fan, and an avid reader.
                     </p>
 
                 </div>
@@ -260,7 +213,7 @@
 
 
         <!-- =====================================
-             SOFTWARE
+            SOFTWARE
         ====================================== -->
 
         <section class="software">
@@ -274,107 +227,68 @@
             <div class="software-grid">
 
                 <div class="soft">
-                    <img
-                        src="./img/logos/autodesk-maya-icon.webp"
-                        alt="Autodesk Maya"
-                        title="Autodesk Maya"
-                    >
+                    <img src="./img/logos/autodesk-maya-icon.webp"
+                        alt="Autodesk Maya" title="Autodesk Maya">
                 </div>
 
                 <div class="soft">
-                    <img
-                        src="./img/logos/Procreate-Logo.png"
-                        alt="Procreate"
-                        title="Procreate"
-                    >
+                    <img src="./img/logos/Procreate-Logo.png"
+                        alt="Procreate" title="Procreate">
                 </div>
 
                 <div class="soft">
-                    <img
-                        src="./img/logos/unreal.webp"
-                        alt="Unreal Engine"
-                        title="Unreal Engine"
-                    >
+                    <img src="./img/logos/unreal.webp"
+                        alt="Unreal Engine" title="Unreal Engine">
                 </div>
 
                 <div class="soft">
-                    <img
-                        src="./img/logos/illustrator.png"
-                        alt="Adobe Illustrator"
-                        title="Adobe Illustrator"
-                    >
+                    <img src="./img/logos/illustrator.png"
+                        alt="Adobe Illustrator" title="Adobe Illustrator">
                 </div>
 
                 <div class="soft">
-                    <img
-                        src="./img/logos/Adobe_Photoshop_CC_icon.svg.png"
-                        alt="Adobe Photoshop"
-                        title="Adobe Photoshop"
-                    >
+                    <img src="./img/logos/Adobe_Photoshop_CC_icon.svg.png"
+                        alt="Adobe Photoshop" title="Adobe Photoshop">
                 </div>
 
                 <div class="soft">
-                    <img
-                        src="./img/logos/github-icon-2.svg"
-                        alt="GitHub"
-                        title="GitHub"
-                    >
+                    <img src="./img/logos/github-icon-2.svg"
+                        alt="GitHub" title="GitHub">
                 </div>
 
                 <div class="soft">
-                    <img
-                        src="./img/logos/Visual_Studio_Code_1.35_icon.svg.png"
-                        alt="Visual Studio Code"
-                        title="Visual Studio Code"
-                    >
+                    <img src="./img/logos/Visual_Studio_Code_1.35_icon.svg.png"
+                        alt="Visual Studio Code" title="Visual Studio Code">
                 </div>
 
                 <div class="soft">
-                    <img
-                        src="./img/logos/nukeFixed.png"
-                        alt="Nuke"
-                        title="Nuke"
-                    >
+                    <img src="./img/logos/nukeFixed.png"
+                        alt="Nuke" title="Nuke">
                 </div>
 
                 <div class="soft">
-                    <img
-                        src="./img/logos/spine_badge.png"
-                        alt="Spine 2D"
-                        title="Spine 2D"
-                    >
+                    <img src="./img/logos/spine_badge.png"
+                        alt="Spine 2D" title="Spine 2D">
                 </div>
 
                 <div class="soft">
-                    <img
-                        src="./img/logos/Godot_icon.svg.png"
-                        alt="Godot"
-                        title="Godot"
-                    >
+                    <img src="./img/logos/Godot_icon.svg.png"
+                        alt="Godot" title="Godot">
                 </div>
 
                 <div class="soft">
-                    <img
-                        src="./img/logos/arnold.webp"
-                        alt="Arnold Renderer"
-                        title="Arnold Renderer"
-                    >
+                    <img src="./img/logos/arnold.webp"
+                        alt="Arnold Renderer" title="Arnold Renderer">
                 </div>
 
                 <div class="soft">
-                    <img
-                        src="./img/logos/Blender.webp"
-                        alt="Blender"
-                        title="Blender"
-                    >
+                    <img src="./img/logos/Blender.webp"
+                        alt="Blender" title="Blender">
                 </div>
 
                 <div class="soft">
-                    <img
-                        src="./img/logos/substance.webp"
-                        alt="Substance Painter"
-                        title="Substance Painter"
-                    >
+                    <img src="./img/logos/substance.webp"
+                        alt="Substance Painter" title="Substance Painter">
                 </div>
 
             </div>
@@ -383,7 +297,7 @@
 
 
         <!-- =====================================
-             CODING LANGUAGES
+            CODING LANGUAGES
         ====================================== -->
 
         <section class="languages">
@@ -397,66 +311,24 @@
             <div class="languages-grid">
 
                 <div class="lang">
-                    <img
-                        src="./img/logos/ISO_C++_Logo.svg.png"
-                        alt="C++"
-                        title="C++"
-                    >
+                    <img src="./img/logos/ISO_C++_Logo.svg.png"
+                        alt="C++" title="C++">
                 </div>
 
                 <div class="lang">
-                    <img
-                        src="./img/logos/Python-logo-notext.svg.png"
-                        alt="Python"
-                        title="Python"
-                    >
+                    <img src="./img/logos/Python-logo-notext.svg.png"
+                        alt="Python" title="Python">
                 </div>
 
                 <div class="lang">
-                    <img
-                        src="./img/logos/javascript-logo-javascript-icon-transparent-free-png.webp"
-                        alt="JavaScript"
-                        title="JavaScript"
-                    >
+                    <img src="./img/logos/javascript-logo-javascript-icon-transparent-free-png.webp"
+                        alt="JavaScript" title="JavaScript">
                 </div>
 
                 <div class="lang">
-                    <img
-                        src="./img/logos/CSS3_logo_and_wordmark.svg.png"
-                        alt="CSS"
-                        title="CSS"
-                    >
+                    <img src="./img/logos/CSS3_logo_and_wordmark.svg.png"
+                        alt="CSS" title="CSS">
                 </div>
-
-            </div>
-
-        </section>
-
-        <!-- =====================================
-             DEMO REEL
-        ====================================== -->
-
-        <section id="demo" class="section alt">
-
-            <div class="section-heading">
-
-                <span class="section-number">
-                    01 / DEMO REEL
-                </span>
-
-                <h2>Demo Reel</h2>
-
-
-            </div>
-
-            <div class="coming-soon">
-
-                <span class="coming-soon-icon">
-                    ✳
-                </span>
-
-                <h3>Demo Reel Coming Soon</h3>
-
 
             </div>
 
@@ -464,7 +336,7 @@
 
 
         <!-- =====================================
-             ANIMATION
+            ANIMATION
         ====================================== -->
 
         <section id="animation" class="section">
@@ -485,15 +357,13 @@
 
             </div>
 
-            <div class="grid" id="animation-grid">
-                <!-- Animation cards inserted by main.js -->
-            </div>
+            <div class="grid" id="animation-grid"></div>
 
         </section>
 
 
         <!-- =====================================
-             3D MODELING & TECH ART
+            3D MODELING
         ====================================== -->
 
         <section id="3d" class="section alt">
@@ -514,15 +384,13 @@
 
             </div>
 
-            <div class="grid" id="modeling-grid">
-                <!-- 3D cards inserted by main.js -->
-            </div>
+            <div class="grid" id="modeling-grid"></div>
 
         </section>
 
 
         <!-- =====================================
-             GAME DEVELOPMENT
+            GAME DEVELOPMENT
         ====================================== -->
 
         <section id="games" class="section">
@@ -543,15 +411,13 @@
 
             </div>
 
-            <div class="grid" id="games-grid">
-                <!-- Game development cards inserted by main.js -->
-            </div>
+            <div class="grid" id="games-grid"></div>
 
         </section>
 
 
         <!-- =====================================
-             DIGITAL ILLUSTRATION & CONCEPT ART
+            ILLUSTRATION
         ====================================== -->
 
         <section id="concept" class="section alt">
@@ -572,15 +438,13 @@
 
             </div>
 
-            <div class="grid" id="concept-grid">
-                <!-- Illustration cards inserted by main.js -->
-            </div>
+            <div class="grid" id="concept-grid"></div>
 
         </section>
 
 
         <!-- =====================================
-             GRAPHIC DESIGN
+            GRAPHIC DESIGN
         ====================================== -->
 
         <section id="design" class="section">
@@ -601,15 +465,13 @@
 
             </div>
 
-            <div class="grid" id="design-grid">
-                <!-- Graphic design cards inserted by main.js -->
-            </div>
+            <div class="grid" id="design-grid"></div>
 
         </section>
 
 
         <!-- =====================================
-             TRADITIONAL ART
+            TRADITIONAL ART
         ====================================== -->
 
         <section id="traditional" class="section alt">
@@ -630,15 +492,13 @@
 
             </div>
 
-            <div class="grid" id="traditional-grid">
-                <!-- Traditional art cards inserted by main.js -->
-            </div>
+            <div class="grid" id="traditional-grid"></div>
 
         </section>
 
 
         <!-- =====================================
-             WEBSITE DESIGN
+            WEBSITE DESIGN
         ====================================== -->
 
         <section id="websites" class="section">
@@ -659,15 +519,13 @@
 
             </div>
 
-            <div class="grid" id="web-grid">
-                <!-- Website cards inserted by main.js -->
-            </div>
+            <div class="grid" id="web-grid"></div>
 
         </section>
 
 
         <!-- =====================================
-             DIGITAL HUMANS
+            DIGITAL HUMANS
         ====================================== -->
 
         <section id="digitalhumans" class="section alt">
@@ -688,15 +546,13 @@
 
             </div>
 
-            <div class="grid" id="digitalhuman-grid">
-                <!-- Digital Human cards inserted by main.js -->
-            </div>
+            <div class="grid" id="digitalhuman-grid"></div>
 
         </section>
 
 
         <!-- =====================================
-             CONTACT / FOOTER
+            CONTACT
         ====================================== -->
 
         <footer id="contact" class="footer">
@@ -711,7 +567,6 @@
                 I'd love to hear from you!
             </p>
 
-
             <a
                 href="mailto:mblumpkin2@gmail.com"
                 class="footer-email"
@@ -719,56 +574,51 @@
                 mblumpkin2@gmail.com ↗
             </a>
 
-
             <div class="contact-icons">
 
-                <!-- Email -->
-                <a
-                    href="mailto:mblumpkin2@gmail.com"
-                    aria-label="Email Madison"
-                >
+                <a href="mailto:mblumpkin2@gmail.com"
+                aria-label="Email Madison">
+
                     <img
                         src="./img/logos/email-icon-614x460.png"
                         alt="Email"
                     >
+
                 </a>
 
-
-                <!-- Instagram -->
                 <a
                     href="https://instagram.com/justmadi.b"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Instagram"
                 >
+
                     <img
                         src="./img/logos/instagram-logo-instagram-logo-transparent-instagram-icon-transparent-free-free-png.webp"
                         alt="Instagram"
                     >
+
                 </a>
 
-
-                <!-- LinkedIn -->
                 <a
                     href="https://linkedin.com/in/madison-lumpkin-352907347"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="LinkedIn"
                 >
+
                     <img
                         src="./img/logos/logo-linkedin-icon-sm.png"
                         alt="LinkedIn"
                     >
+
                 </a>
 
             </div>
 
-
             <div class="footer-bottom">
 
-                <p>
-                    © 2026 Madison Lumpkin
-                </p>
+                <p>© 2026 Madison Lumpkin</p>
 
                 <a href="#top">
                     Back to Top ↑
@@ -782,8 +632,28 @@
 
 
     <!-- =====================================
-         PROJECT MODAL / IMAGE CAROUSEL
-    ====================================== -->
+        FLOATING CONTINUE BUTTON
+    ===================================== -->
+
+    <a
+        class="floating-next"
+        id="floatingNext"
+        href="#about"
+        hidden
+    >
+
+        <span id="floatingNextLabel">
+            Continue to About
+        </span>
+
+        <span aria-hidden="true">↗</span>
+
+    </a>
+
+
+    <!-- =====================================
+        PROJECT MODAL
+    ===================================== -->
 
     <div
         id="modal"
@@ -800,7 +670,6 @@
             onclick="event.stopPropagation()"
         >
 
-            <!-- Close Button -->
             <button
                 class="close"
                 type="button"
@@ -810,8 +679,6 @@
                 ×
             </button>
 
-
-            <!-- Carousel -->
             <div class="carousel">
 
                 <button
@@ -836,8 +703,6 @@
 
             </div>
 
-
-            <!-- Project Information -->
             <div class="modal-meta">
 
                 <h3 id="modalTitle"></h3>
@@ -846,12 +711,8 @@
 
             </div>
 
-
-            <!-- Full Description -->
             <p id="modalText"></p>
 
-
-            <!-- Software Icons -->
             <div
                 id="modalSoftwares"
                 class="modal-softwares"
@@ -863,11 +724,10 @@
 
 
     <!-- =====================================
-         MAIN JAVASCRIPT
-    ====================================== -->
+        JAVASCRIPT
+    ===================================== -->
 
     <script src="./js/main.js"></script>
 
-</body>
-
-</html>
+    </body>
+    </html>
