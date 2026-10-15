@@ -514,12 +514,12 @@
         },
 
         {
-            title: "Body Modification",
+            title: "Mnemonic Skull Body Modification",
             category: "digitalhumans",
             type: "Human Body Relationship · 3D Modeling · 3D Printing",
             context: "Digital Humans Course",
-            description: "",
-            media: [],
+            description: "For this project, I wanted to create a body modification that is designed to protect a part of the human body that can't be physically protected. This body mod, the Mnemonic Skull, is meant to protect human memories -- both the good and the bad.",
+            media: ["./img/digitalhumans/MainPhotoView_MnemonicSkull.png","./img/digitalhumans/FrontView.png", "./img/digitalhumans/MnemonicSkull.png"],
             software: ["blender"]
         },
 
