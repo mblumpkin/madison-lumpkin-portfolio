@@ -443,6 +443,16 @@
             software: []
         },
 
+        {
+            title: "Painted Gown",
+            category: "traditional",
+            type: "3D Wearable Piece",
+            context: "2024 · 3D Design Course",
+            description: "2024, 3D Wearable for LSU School of Art Fall Fashion Show. This dress was inspired by the feeling of passion I have while painting and how the objects that are usually left behind (like dirty, used paint palettes and crusted, broken brushes) can also become works of art.",
+            media: ["./img/traditional/PaintedDress.jpeg"],
+            software: []
+        },
+
 
         /* ===== WEBSITES ===== */
 
@@ -511,7 +521,19 @@
             description: "",
             media: [],
             software: ["blender"]
-        }
+        },
+
+        /* ===== DIGITAL TWINS ===== */
+
+        {
+            title: "",
+            category: "digitaltwins",
+            type: "",
+            context: "Digital Twins Course",
+            description: "",
+            media: [],
+            software: [""]
+        },
 
     ];
 
@@ -528,7 +550,8 @@
         design: "design-grid",
         traditional: "traditional-grid",
         web: "web-grid",
-        digitalhumans: "digitalhuman-grid"
+        digitalhumans: "digitalhuman-grid",
+        digitaltwins: "digitaltwin-grid"
     };
 
 
@@ -1075,7 +1098,9 @@
 
         ["websites", "Digital Humans"],
 
-        ["digitalhumans", "Contact"],
+        ["digitalhumans", "Digital Twins"],
+
+        ["digitaltwins", "Contact"],
 
         ["contact", null]
 
