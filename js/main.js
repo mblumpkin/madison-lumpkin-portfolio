@@ -130,10 +130,14 @@
         {
             title: "Ice Cream Truck",
             category: "modeling",
-            type: "Tech Art · Materials",
+            type: "Tech Art · Surfacing",
             context: "Digital Surfaces & Lighting Course",
-            description: "This project focused on creating a custom-painted ice cream truck that communicates a clear visual identity while showcasing creativity, context, and a sense of age. The goal was to develop a unique, eye-catching design that balances playful aesthetics with realistic weathering and wear, giving the truck a distinct personality and a believable history.",
-            media: [],
+            description: "This project focused on creating a custom-painted ice cream truck with a given, base model that communicates a clear visual identity while showcasing creativity, context, and a sense of age. The goal was to develop a unique, eye-catching design that balances playful aesthetics with realistic weathering and wear, giving the truck a distinct personality and a believable history. I added additional assets to the truck as well.",
+            media: ["./img/digitalSurfaces/Lumpkin_iceCreamTruck_PerspectiveView.jpg", 
+                    "./img/digitalSurfaces/Lumpkin_iceCreamTruck_sideView.jpg", 
+                    "./img/digitalSurfaces/Lumpkin_iceCreamTruck_frontView.jpg",
+                    "./img/digitalSurfaces/Lumpkin_iceCreamTruck_stoolCloseUpView.jpg",
+                    "./img/digitalSurfaces/Lumpkin_iceCreamTruck_closeUpView.jpg"],
             software: ["substance", "maya", "arnold"]
         },
 
