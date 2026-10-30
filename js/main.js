@@ -142,6 +142,22 @@
             software: ["substance", "maya", "arnold"]
         },
 
+        {
+            title: "Brachiosaurus Museum Prop",
+            category: "modeling",
+            type: "Prop Modeling · Tech Art · Surfacing",
+            context: "Production Team Course",
+            description: "Our project for Production Team is to create a VR psycological thriller with an abandoned museum as the setting. I'm a Look Dev for the project and modeled this optimized 10,000 poly dinosaur skeleton as well as textured/painted it to be a large prop in our game.",
+            media: [
+                "./img/virtualSpace/dinosaur_still01.jpg",
+                "./img/virtualSpace/dinosaur_still02.jpg",
+                "./img/virtualSpace/dinosaur_still03.jpg",
+                "./img/virtualSpace/dinosaur_still04.jpg",
+                "./img/virtualSpace/dinosaur_still05.jpg",
+            ],
+            software: ["maya", "substance", "arnold"]
+        },
+
 
         /* ===== GAME DEVELOPMENT ===== */
 
@@ -233,27 +249,31 @@
         },
 
         {
-            title: "X-Emplar - Female Main Character",
+            title: "X-Emplar Player Character Designs",
             category: "concept",
             type: "Character Design · Game Development",
             context: "Game Dev Assistantship Work",
-            description: "As part of my assistantship with Pennington Biomedical and the LSU DMAE Center, one of my tasks was to create the main character designs as well as examples of the possible character customizations. This is an example of the main super female character and how she can be customized. The project is to create a game that encourages preteens to be healthy, mindful, and active through a fun and engaging superhero storyline.",
+            description: "As part of my assistantship with Pennington Biomedical and the LSU DMAE Center, one of my tasks was to create the main character designs as well as examples of the possible character customizations. The project is to create a game that encourages preteens to be healthy, mindful, and active through a fun and engaging superhero storyline.",
             media: [
+                "./img/illustrations/MaleMain.png",
                 "./img/illustrations/FemaleMain.png",
-                "./img/illustrations/dynamicpose.png",
-                "./img/illustrations/FemalePossibleDesigns.jpeg"
+                "./img/illustrations/NiaCharacterDesign.webp",
+                "./img/illustrations/CasCharacterDesign.webp",
+                "./img/illustrations/ZayneCharacterDesign.webp",
+                "./img/illustrations/JodieCharacterDesign.webp"
             ],
             software: ["procreate"]
         },
 
         {
-            title: "X-Emplar - Male Main Character",
+            title: "X-Emplar Player Adult Designs",
             category: "concept",
             type: "Character Design · Game Development",
             context: "Game Dev Assistantship Work",
-            description: "As part of my assistantship with Pennington Biomedical and the LSU DMAE Center, one of my tasks was to create the main character designs as well as examples of the possible character customizations. This is an example of the main super male character and how he can be customized. The project is to create a game that encourages preteens to be healthy, mindful, and active through a fun and engaging superhero storyline.",
+            description: "As part of my assistantship with Pennington Biomedical and the LSU DMAE Center, one of my tasks was to create the some of the adult/teacher character designs -- some of these being the designs of our games antagonist. The project is to create a game that encourages preteens to be healthy, mindful, and active through a fun and engaging superhero storyline.",
             media: [
-                "./img/illustrations/MaleMain.png"
+                "./img/illustrations/PrincipalDesign.webp",
+                "./img/illustrations/ReplacementTeacher.webp"
             ],
             software: ["procreate"]
         },
@@ -509,16 +529,6 @@
         /* ===== DIGITAL HUMANS ===== */
 
         {
-            title: "Roller Coaster",
-            category: "digitalhumans",
-            type: "Human Response · Theme Park Design",
-            context: "Digital Humans Course",
-            description: "To better understand the reactions of the human body to different levels of G-Force, I was tasked with designing and testing a roller coaster to alter in response to whiplash, risks, intensity, etc. This coaster when through multiple trials to reach its end product.",
-            media: [],
-            software: ["unreal"]
-        },
-
-        {
             title: "Mnemonic Skull Body Modification",
             category: "digitalhumans",
             type: "Human Body Relationship · 3D Modeling · 3D Printing",
@@ -526,6 +536,16 @@
             description: "For this project, I wanted to create a body modification that is designed to protect a part of the human body that can't be physically protected. This body mod, the Mnemonic Skull, is meant to protect human memories -- both the good and the bad.",
             media: ["./img/digitalhumans/MainPhotoView_MnemonicSkull.png","./img/digitalhumans/FrontView.png", "./img/digitalhumans/MnemonicSkull.png"],
             software: ["blender", "prusa"]
+        },
+
+        {
+            title: "Injury Prevention",
+            category: "digitalhumans",
+            type: "Sports Tech · Simulations · Body Mechanics · Mocap",
+            context: "Digital Humans Team",
+            description: "As part of my assistantship with LSU's VIS Group, I take part in the research & development for our Injury Prevention application. My main focuses for this project are muscle and soft tissue simulations, digital human twins with MetaHumans, motion capture, and technical art.",
+            media: [],
+            software: ["unreal", "blender"]
         },
 
         /* ===== DIGITAL TWINS ===== */
