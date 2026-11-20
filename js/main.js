@@ -92,6 +92,18 @@
             software: ["procreate", "spine", "photoshop"]
         },
 
+        {
+            title: "Kung Fu Panda 2 ASL Scene Translation",
+            category: "animation",
+            type: "3D Character Animation",
+            context: "Independent Study",
+            description: "",
+            media: [
+                ""
+            ],
+            software: []
+        },
+
 
         /* ===== 3D MODELING ===== */
 
@@ -145,7 +157,7 @@
         {
             title: "Brachiosaurus Museum Prop",
             category: "modeling",
-            type: "Prop Modeling · Tech Art · Surfacing",
+            type: "Prop Modeling · Surfacing",
             context: "Production Team Course",
             description: "Our project for Production Team is to create a VR psycological thriller with an abandoned museum as the setting. I'm a Look Dev for the project and modeled this optimized 10,000 poly dinosaur skeleton as well as textured/painted it to be a large prop in our game.",
             media: [
@@ -154,6 +166,23 @@
                 "./img/virtualSpace/dinosaur_still03.jpg",
                 "./img/virtualSpace/dinosaur_still04.jpg",
                 "./img/virtualSpace/dinosaur_still05.jpg",
+            ],
+            software: ["maya", "substance", "arnold"]
+        },
+
+        {
+            title: "Marionette Museum Character",
+            category: "modeling",
+            type: "Character Modeling · Character Design ·Surfacing",
+            context: "Production Team Course",
+            description: "Our project for Production Team is to create a VR psycological thriller with an abandoned museum as the setting. I'm a Look Dev for the project, so I designed, modeled, and textured this marionette that will be rigged, animated, and given hair simualtion as one of the minor antagonists of our game.",
+            media: [
+                "./img/digitalSurfaces/marionetteFront.png",
+                "./img/digitalSurfaces/marionetteBack.png",
+                "./img/digitalSurfaces/marionetteHand.png",
+                "./img/digitalSurfaces/marionetteFeet.png",
+                "./img/digitalSurfaces/marionetteSketch.png",
+                "./img/digitalSurfaces/marionetteFaceSketch.png"
             ],
             software: ["maya", "substance", "arnold"]
         },
